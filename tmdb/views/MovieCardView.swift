@@ -7,65 +7,46 @@
 
 import SwiftUI
 
-/// A SwiftUI `View` that displays a single movie card, designed for use within
-/// a `UICollectionViewCell` (via `UIHostingController`).
-/// It shows the movie's poster, title, and a brief overview.
 struct MovieCardView: View {
-    /// The `Movie` object containing the data to display.
     let movie: Movie
 
     var body: some View {
         VStack(alignment: .leading) {
-            // Displays the movie poster using AsyncImage.
-            // AsyncImage efficiently loads images from URLs and provides placeholders.
             if let url = movie.posterURL {
                 AsyncImage(url: url) { image in
-                    // When the image successfully loads, display it.
                     image
-                        .resizable() // Makes the image resize to fit its frame.
-                        .aspectRatio(contentMode: .fit) // Maintains aspect ratio, fitting within bounds.
-                        .cornerRadius(8) // Applies rounded corners to the image.
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(8)
                 } placeholder: {
-                    // Display a progress indicator while the image is loading.
                     ProgressView()
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity) // Ensures the image fills its available space.
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             } else {
-                // If no poster URL is available, show a placeholder rectangle.
                 Rectangle()
-                    .fill(Color.gray.opacity(0.3)) // A light gray background.
-                    .cornerRadius(8) // Rounded corners for the placeholder.
+                    .fill(Color.gray.opacity(0.3))
+                    .cornerRadius(8)
                     .overlay(
-                        // Overlay text indicating no image is available.
                         Text("No Image")
-                            .foregroundColor(.white) // White text for contrast.
+                            .foregroundColor(.white)
                     )
             }
-
-            // Displays the movie's title.
             Text(movie.title)
-                .font(.headline) // Uses a prominent font style.
-                .lineLimit(2) // Limits the title to two lines to prevent overflow.
-
-            // Displays a short description (overview) of the movie.
+                .font(.headline)
+                .lineLimit(2)
             Text(movie.overview)
-                .font(.subheadline) // Uses a slightly smaller font.
-                .foregroundColor(.gray) // Gray color for secondary information.
-                .lineLimit(3) // Limits the description to three lines.
+                .font(.subheadline)
+                .foregroundColor(.gray)
+                .lineLimit(3) // Short description
         }
-        .padding(8) // Adds internal padding around the content.
-        .background(Color.white) // Sets the background color of the card.
-        .cornerRadius(10) // Applies rounded corners to the entire card.
-        .shadow(radius: 5) // Adds a subtle shadow for depth.
+        .padding(8)
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 
----
 
-### Preview Provider
-
-```swift
-// Optional: Add a preview for quick design iteration
 struct MovieCardView_Previews: PreviewProvider {
     static var previews: some View {
         // Provides a preview of the MovieCardView with sample movie data.

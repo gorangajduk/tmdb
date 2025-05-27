@@ -158,11 +158,24 @@ extension TrendingMoviesViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 
 extension TrendingMoviesViewController: UICollectionViewDelegate {
-    /// Handles item selection in the collection view.
-    /// - TODO: Implement navigation to the Movie Details Screen.
+    /// Handles item selection in the collection view by navigating to the Movie Detail Screen.
+    /// - Parameter indexPath: The index path of the selected movie.
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedMovie = viewModel.movies[indexPath.item]
-        print("Selected: \(selectedMovie.title)") // Placeholder for navigation
+        
+        // 1. Create an instance of the SwiftUI MovieDetailView with the selected movie's ID.
+        let detailSwiftUIView = MovieDetailView(movieId: selectedMovie.id)
+        
+        // 2. Wrap the SwiftUI view in a UIHostingController.
+        let detailViewController = UIHostingController(rootView: detailSwiftUIView)
+        
+        // 3. Set a title for the navigation bar on the detail screen.
+        detailViewController.title = selectedMovie.title
+        
+        // 4. Push the UIHostingController onto the navigation stack.
+        // Ensure that TrendingMoviesViewController is embedded in a UINavigationController
+        // in your Storyboard or programmatically.
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 

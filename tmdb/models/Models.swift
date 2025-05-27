@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - Trending Movies Response and Movie Models
+
 /// Represents the top-level response structure when fetching a list of trending movies from The MovieDB API.
 /// Conforms to `Codable` to facilitate easy decoding from JSON data.
 struct TrendingMoviesResponse: Codable {
@@ -50,7 +52,7 @@ struct Movie: Codable, Identifiable {
     /// The release date of the movie. It's optional as some entries might lack this data.
     let releaseDate: String?
     
-    // MARK: - Extended Properties for Detail Screen (Future Use)
+    // MARK: - Extended Properties (Common to both Movie and MovieDetail if needed, but primary focus is for detail)
     
     /// The average vote score for the movie, typically on a scale of 0-10. Optional.
     let voteAverage: Double?
@@ -84,5 +86,84 @@ struct Movie: Codable, Identifiable {
         case releaseDate = "release_date"
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
+    }
+}
+
+// MARK: - Movie Detail Model
+
+/// Represents the detailed information for a single movie from The MovieDB API.
+/// This structure includes more extensive data than the basic `Movie` model.
+struct MovieDetail: Codable, Identifiable {
+    let id: Int
+    let title: String
+    let overview: String? // Can be null for some entries
+    let posterPath: String?
+    let backdropPath: String? // For a larger background image
+    let releaseDate: String?
+    let runtime: Int? // In minutes
+    let tagline: String? // Short, catchy phrase
+    let voteAverage: Double?
+    let voteCount: Int?
+    let genres: [Genre]?
+    let productionCompanies: [ProductionCompany]?
+    let status: String? // e.g., "Released", "In Production"
+    // Add more properties as needed based on TMDB /movie/{movie_id} response
+    // e.g., belongs_to_collection, budget, homepage, imdb_id, original_language,
+    // original_title, popularity, production_countries, revenue, spoken_languages
+
+    var detailPosterURL: URL? {
+        guard let path = posterPath else { return nil }
+        return URL(string: "\(Constants.tmdbImageBaseURL)\(Constants.ImageSize.medium.rawValue)\(path)")
+    }
+
+    var backdropURL: URL? {
+        guard let path = backdropPath else { return nil }
+        return URL(string: "\(Constants.tmdbImageBaseURL)\(Constants.ImageSize.original.rawValue)\(path)") // Use original or w780 for backdrop
+    }
+
+    var formattedRuntime: String? {
+        guard let runtime = runtime else { return nil }
+        let hours = runtime / 60
+        let minutes = runtime % 60
+        if hours > 0 {
+            return "\(hours)h \(minutes)m"
+        } else {
+            return "\(minutes)m"
+        }
+    }
+
+    var formattedVoteAverage: String {
+        guard let average = voteAverage else { return "N/A" }
+        return String(format: "%.1f", average)
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case id, title, overview, tagline, runtime, status, genres
+        case posterPath = "poster_path"
+        case backdropPath = "backdrop_path"
+        case releaseDate = "release_date"
+        case voteAverage = "vote_average"
+        case voteCount = "vote_count"
+        case productionCompanies = "production_companies"
+    }
+}
+
+/// Represents a genre associated with a movie.
+struct Genre: Codable, Identifiable {
+    let id: Int
+    let name: String
+}
+
+/// Represents a production company associated with a movie.
+struct ProductionCompany: Codable, Identifiable {
+    let id: Int
+    let name: String
+    let logoPath: String?
+    let originCountry: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id, name
+        case logoPath = "logo_path"
+        case originCountry = "origin_country"
     }
 }
