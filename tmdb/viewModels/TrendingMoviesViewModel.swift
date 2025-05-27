@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import tmdbKit
 
 /// A view model responsible for fetching and managing trending movie data.
 /// It observes changes in movie data and pagination state, making them available to the UI.

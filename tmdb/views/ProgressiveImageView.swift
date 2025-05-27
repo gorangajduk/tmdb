@@ -59,7 +59,6 @@ struct ProgressiveImageView: View {
                         lowResLoaded = true
                     }
                     .onFailure { error in
-                        print("Low-res image failed: \(error)")
                         if !highResLoaded {
                             loadingFailed = true
                         }
@@ -83,7 +82,6 @@ struct ProgressiveImageView: View {
                     }
                 }
                 .onFailure { error in
-                    print("High-res image failed: \(error)")
                     // If high-res fails but we have low-res, keep showing low-res
                     if !lowResLoaded {
                         loadingFailed = true

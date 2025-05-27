@@ -1,0 +1,168 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-tvos18.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name tmdbKitTV
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import Combine
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum NetworkError : Swift.Error, Foundation.LocalizedError {
+  case invalidURL
+  case requestFailed(any Swift.Error)
+  case invalidResponse
+  case decodingFailed(any Swift.Error)
+  case serverError(statusCode: Swift.Int)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NetworkService {
+  public static let shared: tmdbKitTV.NetworkService
+  public func request<T>(endpoint: Swift.String) async throws -> T where T : Swift.Decodable, T : Swift.Encodable
+  public func fetchTrendingMovies(page: Swift.Int) async throws -> [tmdbKitTV.Movie]
+  public func fetchMovieDetail(id: Swift.Int) async throws -> tmdbKitTV.MovieDetail
+  public func searchMovies(query: Swift.String, page: Swift.Int) async throws -> [tmdbKitTV.Movie]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class FavoriteMoviesManager : Foundation.ObservableObject {
+  @_Concurrency.MainActor public static let shared: tmdbKitTV.FavoriteMoviesManager
+  @Combine.Published @_projectedValueProperty($favoriteMovieIDs) @_Concurrency.MainActor final public var favoriteMovieIDs: Swift.Set<Swift.Int> {
+    get
+  }
+  @_Concurrency.MainActor final public var $favoriteMovieIDs: Combine.Published<Swift.Set<Swift.Int>>.Publisher {
+    get
+  }
+  @_Concurrency.MainActor final public func toggleFavorite(movieID: Swift.Int)
+  @_Concurrency.MainActor final public func isFavorite(movieID: Swift.Int) -> Swift.Bool
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct Constants {
+  public static let tmdbAPIKey: Swift.String
+  public static let tmdbBaseURL: Swift.String
+  public static let tmdbImageBaseURL: Swift.String
+  public enum ImageSize : Swift.String {
+    case thumbnail
+    case small
+    case medium
+    case original
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Endpoint {
+    public static func trendingMovies(page: Swift.Int) -> Swift.String
+    public static func movieDetails(id: Swift.Int) -> Swift.String
+    public static func searchMovies(query: Swift.String, page: Swift.Int) -> Swift.String
+  }
+}
+public struct TrendingMoviesResponse : Swift.Codable {
+  public let page: Swift.Int
+  public let results: [tmdbKitTV.Movie]
+  public let totalPages: Swift.Int
+  public let totalResults: Swift.Int
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case page, results
+    case totalPages
+    case totalResults
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Movie : Swift.Codable, Swift.Identifiable {
+  public let id: Swift.Int
+  public let title: Swift.String
+  public let overview: Swift.String
+  public let posterPath: Swift.String?
+  public let releaseDate: Swift.String?
+  public let voteAverage: Swift.Double?
+  public let voteCount: Swift.Int?
+  public var thumbnailPosterURL: Foundation.URL? {
+    get
+  }
+  public var posterURL: Foundation.URL? {
+    get
+  }
+  public var detailPosterURL: Foundation.URL? {
+    get
+  }
+  public typealias ID = Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieDetail : Swift.Codable, Swift.Identifiable {
+  public let id: Swift.Int
+  public let title: Swift.String
+  public let overview: Swift.String?
+  public let posterPath: Swift.String?
+  public let backdropPath: Swift.String?
+  public let releaseDate: Swift.String?
+  public let runtime: Swift.Int?
+  public let tagline: Swift.String?
+  public let voteAverage: Swift.Double?
+  public let voteCount: Swift.Int?
+  public let genres: [tmdbKitTV.Genre]?
+  public let productionCompanies: [tmdbKitTV.ProductionCompany]?
+  public let status: Swift.String?
+  public var posterURL: Foundation.URL? {
+    get
+  }
+  public var detailPosterURL: Foundation.URL? {
+    get
+  }
+  public var backdropThumbnailURL: Foundation.URL? {
+    get
+  }
+  public var backdropURL: Foundation.URL? {
+    get
+  }
+  public var formattedRuntime: Swift.String? {
+    get
+  }
+  public var formattedVoteAverage: Swift.String {
+    get
+  }
+  public typealias ID = Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Genre : Swift.Codable, Swift.Identifiable {
+  public let id: Swift.Int
+  public let name: Swift.String
+  public typealias ID = Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProductionCompany : Swift.Codable, Swift.Identifiable {
+  public let id: Swift.Int
+  public let name: Swift.String
+  public let logoPath: Swift.String?
+  public let originCountry: Swift.String?
+  public typealias ID = Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension tmdbKitTV.FavoriteMoviesManager : Swift.Sendable {}
+extension tmdbKitTV.Constants.ImageSize : Swift.Equatable {}
+extension tmdbKitTV.Constants.ImageSize : Swift.Hashable {}
+extension tmdbKitTV.Constants.ImageSize : Swift.RawRepresentable {}
+extension tmdbKitTV.TrendingMoviesResponse.CodingKeys : Swift.Equatable {}
+extension tmdbKitTV.TrendingMoviesResponse.CodingKeys : Swift.Hashable {}
+extension tmdbKitTV.TrendingMoviesResponse.CodingKeys : Swift.RawRepresentable {}

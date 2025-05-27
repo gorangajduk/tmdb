@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86FA9112DE6642500E40568 /* tmdbKitTV.docc in Sources */ = {isa = PBXBuildFile; fileRef = D86FA9082DE6642500E40568 /* tmdbKitTV.docc */; };
+		D86FA9122DE6642500E40568 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA9002DE6642500E40568 /* Models.swift */; };
+		D86FA9132DE6642500E40568 /* tmdbKitMac.docc in Sources */ = {isa = PBXBuildFile; fileRef = D86FA9052DE6642500E40568 /* tmdbKitMac.docc */; };
+		D86FA9142DE6642500E40568 /* tmdbKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA9032DE6642500E40568 /* tmdbKit.swift */; };
+		D86FA9152DE6642500E40568 /* tmdbKitMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA9062DE6642500E40568 /* tmdbKitMac.swift */; };
+		D86FA9162DE6642500E40568 /* FavoriteMoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA8FF2DE6642500E40568 /* FavoriteMoviesManager.swift */; };
+		D86FA9172DE6642500E40568 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA8FE2DE6642500E40568 /* Constants.swift */; };
+		D86FA9182DE6642500E40568 /* tmdbKitTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA9092DE6642500E40568 /* tmdbKitTV.swift */; };
+		D86FA9192DE6642500E40568 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86FA9012DE6642500E40568 /* NetworkService.swift */; };
+		D86FA91A2DE6642500E40568 /* tmdbKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = D86FA9022DE6642500E40568 /* tmdbKit.docc */; };
+		D86FA91B2DE6642500E40568 /* build_xcframework.sh in Resources */ = {isa = PBXBuildFile; fileRef = D86FA90B2DE6642500E40568 /* build_xcframework.sh */; };
+		D86FA9412DE6642D00E40568 /* tmdbKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86FA8FC2DE6642500E40568 /* tmdbKit.xcframework */; };
+		D86FA9422DE6642D00E40568 /* tmdbKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D86FA8FC2DE6642500E40568 /* tmdbKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8E45EBE2DE6501D005015C9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D8E45EBD2DE6501D005015C9 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +40,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D8E45F432DE661D7005015C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D86FA9422DE6642D00E40568 /* tmdbKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D86FA8FC2DE6642500E40568 /* tmdbKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = tmdbKit.xcframework; sourceTree = "<group>"; };
+		D86FA8FE2DE6642500E40568 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D86FA8FF2DE6642500E40568 /* FavoriteMoviesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMoviesManager.swift; sourceTree = "<group>"; };
+		D86FA9002DE6642500E40568 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D86FA9012DE6642500E40568 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D86FA9022DE6642500E40568 /* tmdbKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = tmdbKit.docc; sourceTree = "<group>"; };
+		D86FA9032DE6642500E40568 /* tmdbKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdbKit.swift; sourceTree = "<group>"; };
+		D86FA9052DE6642500E40568 /* tmdbKitMac.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = tmdbKitMac.docc; sourceTree = "<group>"; };
+		D86FA9062DE6642500E40568 /* tmdbKitMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdbKitMac.swift; sourceTree = "<group>"; };
+		D86FA9082DE6642500E40568 /* tmdbKitTV.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = tmdbKitTV.docc; sourceTree = "<group>"; };
+		D86FA9092DE6642500E40568 /* tmdbKitTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmdbKitTV.swift; sourceTree = "<group>"; };
+		D86FA90B2DE6642500E40568 /* build_xcframework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_xcframework.sh; sourceTree = "<group>"; };
+		D86FA90C2DE6642500E40568 /* tmdbKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = tmdbKit.xcodeproj; sourceTree = "<group>"; };
 		D8E45E392DE6157A005015C9 /* tmdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmdb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45E4F2DE6157C005015C9 /* tmdbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45E592DE6157C005015C9 /* tmdbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E45EBE2DE6501D005015C9 /* Kingfisher in Frameworks */,
+				D86FA9412DE6642D00E40568 /* tmdbKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +131,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D86FA8FD2DE6642500E40568 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D86FA8FC2DE6642500E40568 /* tmdbKit.xcframework */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		D86FA9042DE6642500E40568 /* tmdbKit */ = {
+			isa = PBXGroup;
+			children = (
+				D86FA8FE2DE6642500E40568 /* Constants.swift */,
+				D86FA8FF2DE6642500E40568 /* FavoriteMoviesManager.swift */,
+				D86FA9002DE6642500E40568 /* Models.swift */,
+				D86FA9012DE6642500E40568 /* NetworkService.swift */,
+				D86FA9022DE6642500E40568 /* tmdbKit.docc */,
+				D86FA9032DE6642500E40568 /* tmdbKit.swift */,
+			);
+			path = tmdbKit;
+			sourceTree = "<group>";
+		};
+		D86FA9072DE6642500E40568 /* tmdbKitMac */ = {
+			isa = PBXGroup;
+			children = (
+				D86FA9052DE6642500E40568 /* tmdbKitMac.docc */,
+				D86FA9062DE6642500E40568 /* tmdbKitMac.swift */,
+			);
+			path = tmdbKitMac;
+			sourceTree = "<group>";
+		};
+		D86FA90A2DE6642500E40568 /* tmdbKitTV */ = {
+			isa = PBXGroup;
+			children = (
+				D86FA9082DE6642500E40568 /* tmdbKitTV.docc */,
+				D86FA9092DE6642500E40568 /* tmdbKitTV.swift */,
+			);
+			path = tmdbKitTV;
+			sourceTree = "<group>";
+		};
+		D86FA90D2DE6642500E40568 /* tmdbKit */ = {
+			isa = PBXGroup;
+			children = (
+				D86FA8FD2DE6642500E40568 /* Products */,
+				D86FA9042DE6642500E40568 /* tmdbKit */,
+				D86FA9072DE6642500E40568 /* tmdbKitMac */,
+				D86FA90A2DE6642500E40568 /* tmdbKitTV */,
+				D86FA90B2DE6642500E40568 /* build_xcframework.sh */,
+				D86FA90C2DE6642500E40568 /* tmdbKit.xcodeproj */,
+			);
+			path = tmdbKit;
+			sourceTree = "<group>";
+		};
+		D86FA90E2DE6642500E40568 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D8E45E302DE6157A005015C9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +197,7 @@
 				D8E45E522DE6157C005015C9 /* tmdbTests */,
 				D8E45E5C2DE6157C005015C9 /* tmdbUITests */,
 				D8E45E3A2DE6157A005015C9 /* Products */,
+				D86FA90D2DE6642500E40568 /* tmdbKit */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +222,7 @@
 				D8E45E352DE6157A005015C9 /* Sources */,
 				D8E45E362DE6157A005015C9 /* Frameworks */,
 				D8E45E372DE6157A005015C9 /* Resources */,
+				D8E45F432DE661D7005015C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +323,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D8E45E3A2DE6157A005015C9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D86FA90E2DE6642500E40568 /* Products */;
+					ProjectRef = D86FA90C2DE6642500E40568 /* tmdbKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D8E45E382DE6157A005015C9 /* tmdb */,
@@ -235,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86FA91B2DE6642500E40568 /* build_xcframework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +388,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86FA9112DE6642500E40568 /* tmdbKitTV.docc in Sources */,
+				D86FA9122DE6642500E40568 /* Models.swift in Sources */,
+				D86FA9132DE6642500E40568 /* tmdbKitMac.docc in Sources */,
+				D86FA9142DE6642500E40568 /* tmdbKit.swift in Sources */,
+				D86FA9152DE6642500E40568 /* tmdbKitMac.swift in Sources */,
+				D86FA9162DE6642500E40568 /* FavoriteMoviesManager.swift in Sources */,
+				D86FA9172DE6642500E40568 /* Constants.swift in Sources */,
+				D86FA9182DE6642500E40568 /* tmdbKitTV.swift in Sources */,
+				D86FA9192DE6642500E40568 /* NetworkService.swift in Sources */,
+				D86FA91A2DE6642500E40568 /* tmdbKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
