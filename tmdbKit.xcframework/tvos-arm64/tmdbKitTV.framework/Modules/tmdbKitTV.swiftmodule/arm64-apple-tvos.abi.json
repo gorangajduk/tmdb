@@ -1,0 +1,4876 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "tmdbKitTV",
+    "printedName": "tmdbKitTV",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidURL",
+            "printedName": "invalidURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitTV.NetworkError.Type) -> tmdbKitTV.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "tmdbKitTV.NetworkError",
+                    "usr": "s:9tmdbKitTV12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitTV.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitTV.NetworkError",
+                        "usr": "s:9tmdbKitTV12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9tmdbKitTV12NetworkErrorO10invalidURLyA2CmF",
+            "mangledName": "$s9tmdbKitTV12NetworkErrorO10invalidURLyA2CmF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestFailed",
+            "printedName": "requestFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitTV.NetworkError.Type) -> (any Swift.Error) -> tmdbKitTV.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> tmdbKitTV.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitTV.NetworkError",
+                        "usr": "s:9tmdbKitTV12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitTV.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitTV.NetworkError",
+                        "usr": "s:9tmdbKitTV12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9tmdbKitTV12NetworkErrorO13requestFailedyACs0E0_pcACmF",
+            "mangledName": "$s9tmdbKitTV12NetworkErrorO13requestFailedyACs0E0_pcACmF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidResponse",
+            "printedName": "invalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitTV.NetworkError.Type) -> tmdbKitTV.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "tmdbKitTV.NetworkError",
+                    "usr": "s:9tmdbKitTV12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitTV.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitTV.NetworkError",
+                        "usr": "s:9tmdbKitTV12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9tmdbKitTV12NetworkErrorO15invalidResponseyA2CmF",
+            "mangledName": "$s9tmdbKitTV12NetworkErrorO15invalidResponseyA2CmF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "decodingFailed",
+            "printedName": "decodingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitTV.NetworkError.Type) -> (any Swift.Error) -> tmdbKitTV.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> tmdbKitTV.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitTV.NetworkError",
+                        "usr": "s:9tmdbKitTV12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitTV.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitTV.NetworkError",
+                        "usr": "s:9tmdbKitTV12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9tmdbKitTV12NetworkErrorO14decodingFailedyACs0E0_pcACmF",
+            "mangledName": "$s9tmdbKitTV12NetworkErrorO14decodingFailedyACs0E0_pcACmF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitTV.NetworkError.Type) -> (Swift.Int) -> tmdbKitTV.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> tmdbKitTV.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitTV.NetworkError",
+                        "usr": "s:9tmdbKitTV12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitTV.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitTV.NetworkError",
+                        "usr": "s:9tmdbKitTV12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9tmdbKitTV12NetworkErrorO06serverE0yACSi_tcACmF",
+            "mangledName": "$s9tmdbKitTV12NetworkErrorO06serverE0yACSi_tcACmF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV12NetworkErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s9tmdbKitTV12NetworkErrorO16errorDescriptionSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV12NetworkErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s9tmdbKitTV12NetworkErrorO16errorDescriptionSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9tmdbKitTV12NetworkErrorO",
+        "mangledName": "$s9tmdbKitTV12NetworkErrorO",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkService",
+        "printedName": "NetworkService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkService",
+                "printedName": "tmdbKitTV.NetworkService",
+                "usr": "s:9tmdbKitTV14NetworkServiceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV14NetworkServiceC6sharedACvpZ",
+            "mangledName": "$s9tmdbKitTV14NetworkServiceC6sharedACvpZ",
+            "moduleName": "tmdbKitTV",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkService",
+                    "printedName": "tmdbKitTV.NetworkService",
+                    "usr": "s:9tmdbKitTV14NetworkServiceC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV14NetworkServiceC6sharedACvgZ",
+                "mangledName": "$s9tmdbKitTV14NetworkServiceC6sharedACvgZ",
+                "moduleName": "tmdbKitTV",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV14NetworkServiceC7request8endpointxSS_tYaKSeRzSERzlF",
+            "mangledName": "$s9tmdbKitTV14NetworkServiceC7request8endpointxSS_tYaKSeRzSERzlF",
+            "moduleName": "tmdbKitTV",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchTrendingMovies",
+            "printedName": "fetchTrendingMovies(page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrendingMoviesResponse",
+                "printedName": "tmdbKitTV.TrendingMoviesResponse",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV14NetworkServiceC19fetchTrendingMovies4pageAA0gH8ResponseVSi_tYaKF",
+            "mangledName": "$s9tmdbKitTV14NetworkServiceC19fetchTrendingMovies4pageAA0gH8ResponseVSi_tYaKF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchMovieDetail",
+            "printedName": "fetchMovieDetail(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieDetail",
+                "printedName": "tmdbKitTV.MovieDetail",
+                "usr": "s:9tmdbKitTV11MovieDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV14NetworkServiceC16fetchMovieDetail2idAA0gH0VSi_tYaKF",
+            "mangledName": "$s9tmdbKitTV14NetworkServiceC16fetchMovieDetail2idAA0gH0VSi_tYaKF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "searchMovies",
+            "printedName": "searchMovies(query:page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrendingMoviesResponse",
+                "printedName": "tmdbKitTV.TrendingMoviesResponse",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV14NetworkServiceC12searchMovies5query4pageAA08TrendingG8ResponseVSS_SitYaKF",
+            "mangledName": "$s9tmdbKitTV14NetworkServiceC12searchMovies5query4pageAA08TrendingG8ResponseVSS_SitYaKF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9tmdbKitTV14NetworkServiceC",
+        "mangledName": "$s9tmdbKitTV14NetworkServiceC",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "tmdbKitTV"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FavoriteMoviesManager",
+        "printedName": "FavoriteMoviesManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FavoriteMoviesManager",
+                "printedName": "tmdbKitTV.FavoriteMoviesManager",
+                "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC6sharedACvpZ",
+            "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC6sharedACvpZ",
+            "moduleName": "tmdbKitTV",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FavoriteMoviesManager",
+                    "printedName": "tmdbKitTV.FavoriteMoviesManager",
+                    "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC6sharedACvgZ",
+                "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC6sharedACvgZ",
+                "moduleName": "tmdbKitTV",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "favoriteMovieIDs",
+            "printedName": "favoriteMovieIDs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.Int>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvp",
+            "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvg",
+                "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$favoriteMovieIDs",
+            "printedName": "$favoriteMovieIDs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Set<Swift.Int>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvp",
+            "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvp",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Set<Swift.Int>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvg",
+                "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFavorite",
+            "printedName": "toggleFavorite(movieID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC06toggleD07movieIDySi_tF",
+            "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC06toggleD07movieIDySi_tF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isFavorite",
+            "printedName": "isFavorite(movieID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC02isD07movieIDSbSi_tF",
+            "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC02isD07movieIDSbSi_tF",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9tmdbKitTV21FavoriteMoviesManagerC",
+        "mangledName": "$s9tmdbKitTV21FavoriteMoviesManagerC",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "Custom",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrendingMoviesResponse",
+        "printedName": "TrendingMoviesResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "page",
+            "printedName": "page",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV4pageSivp",
+            "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV4pageSivp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV4pageSivg",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV4pageSivg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "results",
+            "printedName": "results",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[tmdbKitTV.Movie]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Movie",
+                    "printedName": "tmdbKitTV.Movie",
+                    "usr": "s:9tmdbKitTV5MovieV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV7resultsSayAA5MovieVGvp",
+            "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV7resultsSayAA5MovieVGvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[tmdbKitTV.Movie]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Movie",
+                        "printedName": "tmdbKitTV.Movie",
+                        "usr": "s:9tmdbKitTV5MovieV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV7resultsSayAA5MovieVGvg",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV7resultsSayAA5MovieVGvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalPages",
+            "printedName": "totalPages",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10totalPagesSivp",
+            "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10totalPagesSivp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10totalPagesSivg",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10totalPagesSivg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalResults",
+            "printedName": "totalResults",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV12totalResultsSivp",
+            "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV12totalResultsSivp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV12totalResultsSivg",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV12totalResultsSivg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "page",
+                "printedName": "page",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitTV.TrendingMoviesResponse.CodingKeys.Type) -> tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                        "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO4pageyA2EmF",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO4pageyA2EmF",
+                "moduleName": "tmdbKitTV"
+              },
+              {
+                "kind": "Var",
+                "name": "results",
+                "printedName": "results",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitTV.TrendingMoviesResponse.CodingKeys.Type) -> tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                        "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO7resultsyA2EmF",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO7resultsyA2EmF",
+                "moduleName": "tmdbKitTV"
+              },
+              {
+                "kind": "Var",
+                "name": "totalPages",
+                "printedName": "totalPages",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitTV.TrendingMoviesResponse.CodingKeys.Type) -> tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                        "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO10totalPagesyA2EmF",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO10totalPagesyA2EmF",
+                "moduleName": "tmdbKitTV"
+              },
+              {
+                "kind": "Var",
+                "name": "totalResults",
+                "printedName": "totalResults",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitTV.TrendingMoviesResponse.CodingKeys.Type) -> tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                        "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO12totalResultsyA2EmF",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO12totalResultsyA2EmF",
+                "moduleName": "tmdbKitTV"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                        "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8rawValueAESgSS_tcfc",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8rawValueAESgSS_tcfc",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8rawValueSSvp",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8rawValueSSvp",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8rawValueSSvg",
+                    "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8rawValueSSvg",
+                    "moduleName": "tmdbKitTV",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "stringValue",
+                "printedName": "stringValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO11stringValueSSvp",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO11stringValueSSvp",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO11stringValueSSvg",
+                    "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO11stringValueSSvg",
+                    "moduleName": "tmdbKitTV",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(stringValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                        "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO11stringValueAESgSS_tcfc",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO11stringValueAESgSS_tcfc",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "intValue",
+                "printedName": "intValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8intValueSiSgvp",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8intValueSiSgvp",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8intValueSiSgvg",
+                    "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8intValueSiSgvg",
+                    "moduleName": "tmdbKitTV",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(intValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "tmdbKitTV.TrendingMoviesResponse.CodingKeys",
+                        "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8intValueAESgSi_tcfc",
+                "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO8intValueAESgSi_tcfc",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO",
+            "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV10CodingKeysO",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CodingKey",
+                "printedName": "CodingKey",
+                "usr": "s:s9CodingKeyP",
+                "mangledName": "$ss9CodingKeyP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrendingMoviesResponse",
+                "printedName": "tmdbKitTV.TrendingMoviesResponse",
+                "usr": "s:9tmdbKitTV22TrendingMoviesResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV22TrendingMoviesResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9tmdbKitTV22TrendingMoviesResponseV",
+        "mangledName": "$s9tmdbKitTV22TrendingMoviesResponseV",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Movie",
+        "printedName": "Movie",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV2idSivp",
+            "mangledName": "$s9tmdbKitTV5MovieV2idSivp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV2idSivg",
+                "mangledName": "$s9tmdbKitTV5MovieV2idSivg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV5titleSSvp",
+            "mangledName": "$s9tmdbKitTV5MovieV5titleSSvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV5titleSSvg",
+                "mangledName": "$s9tmdbKitTV5MovieV5titleSSvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overview",
+            "printedName": "overview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV8overviewSSvp",
+            "mangledName": "$s9tmdbKitTV5MovieV8overviewSSvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV8overviewSSvg",
+                "mangledName": "$s9tmdbKitTV5MovieV8overviewSSvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "posterPath",
+            "printedName": "posterPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV10posterPathSSSgvp",
+            "mangledName": "$s9tmdbKitTV5MovieV10posterPathSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV10posterPathSSSgvg",
+                "mangledName": "$s9tmdbKitTV5MovieV10posterPathSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "releaseDate",
+            "printedName": "releaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV11releaseDateSSSgvp",
+            "mangledName": "$s9tmdbKitTV5MovieV11releaseDateSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV11releaseDateSSSgvg",
+                "mangledName": "$s9tmdbKitTV5MovieV11releaseDateSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voteAverage",
+            "printedName": "voteAverage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV11voteAverageSdSgvp",
+            "mangledName": "$s9tmdbKitTV5MovieV11voteAverageSdSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV11voteAverageSdSgvg",
+                "mangledName": "$s9tmdbKitTV5MovieV11voteAverageSdSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voteCount",
+            "printedName": "voteCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV9voteCountSiSgvp",
+            "mangledName": "$s9tmdbKitTV5MovieV9voteCountSiSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV9voteCountSiSgvg",
+                "mangledName": "$s9tmdbKitTV5MovieV9voteCountSiSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thumbnailPosterURL",
+            "printedName": "thumbnailPosterURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV18thumbnailPosterURL10Foundation0G0VSgvp",
+            "mangledName": "$s9tmdbKitTV5MovieV18thumbnailPosterURL10Foundation0G0VSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV18thumbnailPosterURL10Foundation0G0VSgvg",
+                "mangledName": "$s9tmdbKitTV5MovieV18thumbnailPosterURL10Foundation0G0VSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "posterURL",
+            "printedName": "posterURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV9posterURL10Foundation0F0VSgvp",
+            "mangledName": "$s9tmdbKitTV5MovieV9posterURL10Foundation0F0VSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV9posterURL10Foundation0F0VSgvg",
+                "mangledName": "$s9tmdbKitTV5MovieV9posterURL10Foundation0F0VSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "detailPosterURL",
+            "printedName": "detailPosterURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5MovieV15detailPosterURL10Foundation0G0VSgvp",
+            "mangledName": "$s9tmdbKitTV5MovieV15detailPosterURL10Foundation0G0VSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5MovieV15detailPosterURL10Foundation0G0VSgvg",
+                "mangledName": "$s9tmdbKitTV5MovieV15detailPosterURL10Foundation0G0VSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Movie",
+                "printedName": "tmdbKitTV.Movie",
+                "usr": "s:9tmdbKitTV5MovieV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9tmdbKitTV5MovieV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9tmdbKitTV5MovieV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV5MovieV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9tmdbKitTV5MovieV6encode2toys7Encoder_p_tKF",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9tmdbKitTV5MovieV",
+        "mangledName": "$s9tmdbKitTV5MovieV",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieDetail",
+        "printedName": "MovieDetail",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV2idSivp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV2idSivp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV2idSivg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV2idSivg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV5titleSSvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV5titleSSvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV5titleSSvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV5titleSSvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overview",
+            "printedName": "overview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV8overviewSSSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV8overviewSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV8overviewSSSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV8overviewSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "posterPath",
+            "printedName": "posterPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV10posterPathSSSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV10posterPathSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV10posterPathSSSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV10posterPathSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backdropPath",
+            "printedName": "backdropPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV12backdropPathSSSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV12backdropPathSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV12backdropPathSSSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV12backdropPathSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "releaseDate",
+            "printedName": "releaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV11releaseDateSSSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV11releaseDateSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV11releaseDateSSSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV11releaseDateSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "runtime",
+            "printedName": "runtime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV7runtimeSiSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV7runtimeSiSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV7runtimeSiSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV7runtimeSiSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tagline",
+            "printedName": "tagline",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV7taglineSSSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV7taglineSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV7taglineSSSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV7taglineSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voteAverage",
+            "printedName": "voteAverage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV11voteAverageSdSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV11voteAverageSdSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV11voteAverageSdSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV11voteAverageSdSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voteCount",
+            "printedName": "voteCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV9voteCountSiSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV9voteCountSiSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV9voteCountSiSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV9voteCountSiSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "genres",
+            "printedName": "genres",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[tmdbKitTV.Genre]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[tmdbKitTV.Genre]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Genre",
+                        "printedName": "tmdbKitTV.Genre",
+                        "usr": "s:9tmdbKitTV5GenreV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV6genresSayAA5GenreVGSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV6genresSayAA5GenreVGSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[tmdbKitTV.Genre]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[tmdbKitTV.Genre]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Genre",
+                            "printedName": "tmdbKitTV.Genre",
+                            "usr": "s:9tmdbKitTV5GenreV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV6genresSayAA5GenreVGSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV6genresSayAA5GenreVGSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "productionCompanies",
+            "printedName": "productionCompanies",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[tmdbKitTV.ProductionCompany]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[tmdbKitTV.ProductionCompany]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProductionCompany",
+                        "printedName": "tmdbKitTV.ProductionCompany",
+                        "usr": "s:9tmdbKitTV17ProductionCompanyV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV19productionCompaniesSayAA17ProductionCompanyVGSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV19productionCompaniesSayAA17ProductionCompanyVGSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[tmdbKitTV.ProductionCompany]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[tmdbKitTV.ProductionCompany]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProductionCompany",
+                            "printedName": "tmdbKitTV.ProductionCompany",
+                            "usr": "s:9tmdbKitTV17ProductionCompanyV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV19productionCompaniesSayAA17ProductionCompanyVGSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV19productionCompaniesSayAA17ProductionCompanyVGSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV6statusSSSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV6statusSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV6statusSSSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV6statusSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "posterURL",
+            "printedName": "posterURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV9posterURL10Foundation0G0VSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV9posterURL10Foundation0G0VSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV9posterURL10Foundation0G0VSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV9posterURL10Foundation0G0VSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "detailPosterURL",
+            "printedName": "detailPosterURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV15detailPosterURL10Foundation0H0VSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV15detailPosterURL10Foundation0H0VSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV15detailPosterURL10Foundation0H0VSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV15detailPosterURL10Foundation0H0VSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backdropThumbnailURL",
+            "printedName": "backdropThumbnailURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV20backdropThumbnailURL10Foundation0H0VSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV20backdropThumbnailURL10Foundation0H0VSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV20backdropThumbnailURL10Foundation0H0VSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV20backdropThumbnailURL10Foundation0H0VSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backdropURL",
+            "printedName": "backdropURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV11backdropURL10Foundation0G0VSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV11backdropURL10Foundation0G0VSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV11backdropURL10Foundation0G0VSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV11backdropURL10Foundation0G0VSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "formattedRuntime",
+            "printedName": "formattedRuntime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV16formattedRuntimeSSSgvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV16formattedRuntimeSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV16formattedRuntimeSSSgvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV16formattedRuntimeSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "formattedVoteAverage",
+            "printedName": "formattedVoteAverage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV11MovieDetailV20formattedVoteAverageSSvp",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV20formattedVoteAverageSSvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV11MovieDetailV20formattedVoteAverageSSvg",
+                "mangledName": "$s9tmdbKitTV11MovieDetailV20formattedVoteAverageSSvg",
+                "moduleName": "tmdbKitTV",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieDetail",
+                "printedName": "tmdbKitTV.MovieDetail",
+                "usr": "s:9tmdbKitTV11MovieDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9tmdbKitTV11MovieDetailV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV11MovieDetailV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9tmdbKitTV11MovieDetailV6encode2toys7Encoder_p_tKF",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9tmdbKitTV11MovieDetailV",
+        "mangledName": "$s9tmdbKitTV11MovieDetailV",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Genre",
+        "printedName": "Genre",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5GenreV2idSivp",
+            "mangledName": "$s9tmdbKitTV5GenreV2idSivp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5GenreV2idSivg",
+                "mangledName": "$s9tmdbKitTV5GenreV2idSivg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV5GenreV4nameSSvp",
+            "mangledName": "$s9tmdbKitTV5GenreV4nameSSvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV5GenreV4nameSSvg",
+                "mangledName": "$s9tmdbKitTV5GenreV4nameSSvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Genre",
+                "printedName": "tmdbKitTV.Genre",
+                "usr": "s:9tmdbKitTV5GenreV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9tmdbKitTV5GenreV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9tmdbKitTV5GenreV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV5GenreV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9tmdbKitTV5GenreV6encode2toys7Encoder_p_tKF",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9tmdbKitTV5GenreV",
+        "mangledName": "$s9tmdbKitTV5GenreV",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProductionCompany",
+        "printedName": "ProductionCompany",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV17ProductionCompanyV2idSivp",
+            "mangledName": "$s9tmdbKitTV17ProductionCompanyV2idSivp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV17ProductionCompanyV2idSivg",
+                "mangledName": "$s9tmdbKitTV17ProductionCompanyV2idSivg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV17ProductionCompanyV4nameSSvp",
+            "mangledName": "$s9tmdbKitTV17ProductionCompanyV4nameSSvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV17ProductionCompanyV4nameSSvg",
+                "mangledName": "$s9tmdbKitTV17ProductionCompanyV4nameSSvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logoPath",
+            "printedName": "logoPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV17ProductionCompanyV8logoPathSSSgvp",
+            "mangledName": "$s9tmdbKitTV17ProductionCompanyV8logoPathSSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV17ProductionCompanyV8logoPathSSSgvg",
+                "mangledName": "$s9tmdbKitTV17ProductionCompanyV8logoPathSSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "originCountry",
+            "printedName": "originCountry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV17ProductionCompanyV13originCountrySSSgvp",
+            "mangledName": "$s9tmdbKitTV17ProductionCompanyV13originCountrySSSgvp",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV17ProductionCompanyV13originCountrySSSgvg",
+                "mangledName": "$s9tmdbKitTV17ProductionCompanyV13originCountrySSSgvg",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProductionCompany",
+                "printedName": "tmdbKitTV.ProductionCompany",
+                "usr": "s:9tmdbKitTV17ProductionCompanyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9tmdbKitTV17ProductionCompanyV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9tmdbKitTV17ProductionCompanyV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9tmdbKitTV17ProductionCompanyV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9tmdbKitTV17ProductionCompanyV6encode2toys7Encoder_p_tKF",
+            "moduleName": "tmdbKitTV",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9tmdbKitTV17ProductionCompanyV",
+        "mangledName": "$s9tmdbKitTV17ProductionCompanyV",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Constants",
+        "printedName": "Constants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tmdbAPIKey",
+            "printedName": "tmdbAPIKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV9ConstantsV0A6APIKeySSvpZ",
+            "mangledName": "$s9tmdbKitTV9ConstantsV0A6APIKeySSvpZ",
+            "moduleName": "tmdbKitTV",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV9ConstantsV0A6APIKeySSvgZ",
+                "mangledName": "$s9tmdbKitTV9ConstantsV0A6APIKeySSvgZ",
+                "moduleName": "tmdbKitTV",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tmdbBaseURL",
+            "printedName": "tmdbBaseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV9ConstantsV0A7BaseURLSSvpZ",
+            "mangledName": "$s9tmdbKitTV9ConstantsV0A7BaseURLSSvpZ",
+            "moduleName": "tmdbKitTV",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV9ConstantsV0A7BaseURLSSvgZ",
+                "mangledName": "$s9tmdbKitTV9ConstantsV0A7BaseURLSSvgZ",
+                "moduleName": "tmdbKitTV",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tmdbImageBaseURL",
+            "printedName": "tmdbImageBaseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9tmdbKitTV9ConstantsV0A12ImageBaseURLSSvpZ",
+            "mangledName": "$s9tmdbKitTV9ConstantsV0A12ImageBaseURLSSvpZ",
+            "moduleName": "tmdbKitTV",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9tmdbKitTV9ConstantsV0A12ImageBaseURLSSvgZ",
+                "mangledName": "$s9tmdbKitTV9ConstantsV0A12ImageBaseURLSSvgZ",
+                "moduleName": "tmdbKitTV",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ImageSize",
+            "printedName": "ImageSize",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "thumbnail",
+                "printedName": "thumbnail",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitTV.Constants.ImageSize.Type) -> tmdbKitTV.Constants.ImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitTV.Constants.ImageSize",
+                        "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitTV.Constants.ImageSize.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSize",
+                            "printedName": "tmdbKitTV.Constants.ImageSize",
+                            "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO9thumbnailyA2EmF",
+                "mangledName": "$s9tmdbKitTV9ConstantsV9ImageSizeO9thumbnailyA2EmF",
+                "moduleName": "tmdbKitTV",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "small",
+                "printedName": "small",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitTV.Constants.ImageSize.Type) -> tmdbKitTV.Constants.ImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitTV.Constants.ImageSize",
+                        "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitTV.Constants.ImageSize.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSize",
+                            "printedName": "tmdbKitTV.Constants.ImageSize",
+                            "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO5smallyA2EmF",
+                "mangledName": "$s9tmdbKitTV9ConstantsV9ImageSizeO5smallyA2EmF",
+                "moduleName": "tmdbKitTV",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "medium",
+                "printedName": "medium",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitTV.Constants.ImageSize.Type) -> tmdbKitTV.Constants.ImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitTV.Constants.ImageSize",
+                        "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitTV.Constants.ImageSize.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSize",
+                            "printedName": "tmdbKitTV.Constants.ImageSize",
+                            "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO6mediumyA2EmF",
+                "mangledName": "$s9tmdbKitTV9ConstantsV9ImageSizeO6mediumyA2EmF",
+                "moduleName": "tmdbKitTV",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "original",
+                "printedName": "original",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitTV.Constants.ImageSize.Type) -> tmdbKitTV.Constants.ImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitTV.Constants.ImageSize",
+                        "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitTV.Constants.ImageSize.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSize",
+                            "printedName": "tmdbKitTV.Constants.ImageSize",
+                            "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO8originalyA2EmF",
+                "mangledName": "$s9tmdbKitTV9ConstantsV9ImageSizeO8originalyA2EmF",
+                "moduleName": "tmdbKitTV",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "tmdbKitTV.Constants.ImageSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitTV.Constants.ImageSize",
+                        "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s9tmdbKitTV9ConstantsV9ImageSizeO8rawValueAESgSS_tcfc",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO8rawValueSSvp",
+                "mangledName": "$s9tmdbKitTV9ConstantsV9ImageSizeO8rawValueSSvp",
+                "moduleName": "tmdbKitTV",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO8rawValueSSvg",
+                    "mangledName": "$s9tmdbKitTV9ConstantsV9ImageSizeO8rawValueSSvg",
+                    "moduleName": "tmdbKitTV",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9tmdbKitTV9ConstantsV9ImageSizeO",
+            "mangledName": "$s9tmdbKitTV9ConstantsV9ImageSizeO",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Endpoint",
+            "printedName": "Endpoint",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "trendingMovies",
+                "printedName": "trendingMovies(page:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9tmdbKitTV9ConstantsV8EndpointO14trendingMovies4pageSSSi_tFZ",
+                "mangledName": "$s9tmdbKitTV9ConstantsV8EndpointO14trendingMovies4pageSSSi_tFZ",
+                "moduleName": "tmdbKitTV",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "movieDetails",
+                "printedName": "movieDetails(id:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9tmdbKitTV9ConstantsV8EndpointO12movieDetails2idSSSi_tFZ",
+                "mangledName": "$s9tmdbKitTV9ConstantsV8EndpointO12movieDetails2idSSSi_tFZ",
+                "moduleName": "tmdbKitTV",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "searchMovies",
+                "printedName": "searchMovies(query:page:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9tmdbKitTV9ConstantsV8EndpointO12searchMovies5query4pageS2S_SitFZ",
+                "mangledName": "$s9tmdbKitTV9ConstantsV8EndpointO12searchMovies5query4pageS2S_SitFZ",
+                "moduleName": "tmdbKitTV",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9tmdbKitTV9ConstantsV8EndpointO",
+            "mangledName": "$s9tmdbKitTV9ConstantsV8EndpointO",
+            "moduleName": "tmdbKitTV",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9tmdbKitTV9ConstantsV",
+        "mangledName": "$s9tmdbKitTV9ConstantsV",
+        "moduleName": "tmdbKitTV",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/FavoriteMoviesManager.swift",
+      "kind": "Array",
+      "offset": 885,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/FavoriteMoviesManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1003,
+      "length": 18,
+      "value": "\"favoriteMovieIDs\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 13,
+      "value": "\"total_pages\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 15,
+      "value": "\"total_results\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3768,
+      "length": 13,
+      "value": "\"poster_path\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3809,
+      "length": 14,
+      "value": "\"release_date\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3851,
+      "length": 14,
+      "value": "\"vote_average\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3891,
+      "length": 12,
+      "value": "\"vote_count\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 6245,
+      "length": 13,
+      "value": "\"poster_path\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 6287,
+      "length": 15,
+      "value": "\"backdrop_path\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 6330,
+      "length": 14,
+      "value": "\"release_date\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 6372,
+      "length": 14,
+      "value": "\"vote_average\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 6412,
+      "length": 12,
+      "value": "\"vote_count\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 6460,
+      "length": 22,
+      "value": "\"production_companies\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 6967,
+      "length": 11,
+      "value": "\"logo_path\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 7008,
+      "length": 16,
+      "value": "\"origin_country\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 715,
+      "length": 14,
+      "value": "\"TMDB_API_KEY\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 789,
+      "length": 106,
+      "value": "\"Error: TMDB_API_KEY not found in Info.plist or is empty. Please set it in your project's Build Settings.\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1059,
+      "length": 30,
+      "value": "\"https:\/\/api.themoviedb.org\/3\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1268,
+      "length": 29,
+      "value": "\"https:\/\/image.tmdb.org\/t\/p\/\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1598,
+      "length": 5,
+      "value": "\"w92\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1729,
+      "length": 6,
+      "value": "\"w200\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1853,
+      "length": 6,
+      "value": "\"w500\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1970,
+      "length": 10,
+      "value": "\"original\""
+    }
+  ]
+}

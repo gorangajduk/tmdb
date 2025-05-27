@@ -98,8 +98,8 @@ final class SearchMoviesViewModel: ObservableObject {
 
         Task {
             do {
-                let endpoint = Constants.Endpoint.searchMovies(query: currentQuery, page: currentPage)
-                let response: TrendingMoviesResponse = try await NetworkService.shared.request(endpoint: endpoint)
+                let response: TrendingMoviesResponse = try await NetworkService.shared.searchMovies(query: currentQuery,
+                                                                                                    page: currentPage)
 
                 // Update published properties on the main actor.
                 self.searchResults.append(contentsOf: response.results)

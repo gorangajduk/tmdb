@@ -57,9 +57,7 @@ final class TrendingMoviesViewModel: ObservableObject {
         // dispatched to the main actor, removing the need for explicit `DispatchQueue.main.async`.
         Task {
             do {
-                let response: TrendingMoviesResponse = try await NetworkService.shared.request(
-                    endpoint: Constants.Endpoint.trendingMovies(page: currentPage)
-                )
+                let response: TrendingMoviesResponse = try await NetworkService.shared.fetchTrendingMovies(page: currentPage)
 
                 // Append new movies and update pagination state.
                 self.movies.append(contentsOf: response.results)

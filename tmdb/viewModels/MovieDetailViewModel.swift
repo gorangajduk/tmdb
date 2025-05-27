@@ -52,8 +52,8 @@ final class MovieDetailViewModel: ObservableObject {
         // within this Task's scope will automatically be dispatched to the main actor.
         Task {
             do {
-                let endpoint = Constants.Endpoint.movieDetails(id: movieId)
-                let detail: MovieDetail = try await NetworkService.shared.request(endpoint: endpoint)
+                
+                let detail: MovieDetail = try await NetworkService.shared.fetchMovieDetail(id: movieId)
                 
                 // Update published properties on the main actor.
                 self.movieDetail = detail

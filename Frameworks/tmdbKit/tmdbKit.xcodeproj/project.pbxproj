@@ -16,20 +16,20 @@
 		D8E45F372DE65B3B005015C9 /* Exceptions for "tmdbKit" folder in "tmdbKitTV" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Constants.swift,
 				FavoriteMoviesManager.swift,
-				Models.swift,
-				NetworkService.swift,
+				models/Models.swift,
+				service/NetworkService.swift,
+				utils/Constants.swift,
 			);
 			target = D8E45F1D2DE65B00005015C9 /* tmdbKitTV */;
 		};
 		D8E45F382DE65B3B005015C9 /* Exceptions for "tmdbKit" folder in "tmdbKitMac" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Constants.swift,
 				FavoriteMoviesManager.swift,
-				Models.swift,
-				NetworkService.swift,
+				models/Models.swift,
+				service/NetworkService.swift,
+				utils/Constants.swift,
 			);
 			target = D8E45F2B2DE65B25005015C9 /* tmdbKitMac */;
 		};
