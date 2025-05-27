@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 /// A reusable SwiftUI view for progressive image loading.
 /// It displays a low-resolution image as a placeholder while the high-resolution image loads,
@@ -16,13 +17,17 @@ struct ProgressiveImageView: View {
     /// The URL for the high-resolution (final) image.
     let highResURL: URL?
     /// The content mode for the image (e.g., .fit, .fill).
-    let contentMode: ContentMode
+    let contentMode: SwiftUI.ContentMode
     /// Optional blur radius applied to the low-resolution image.
     let lowResBlurRadius: CGFloat
     /// Optional text to display if no image URLs are provided or loading fails.
     let noImageText: String?
     /// Optional icon to display if no image URLs are provided or loading fails.
     let noImageIcon: String? // Changed to String? for SF Symbol name
+    
+    @State private var highResLoaded = false
+    @State private var lowResLoaded = false
+    @State private var loadingFailed = false
 
     /// Initializes the progressive image view.
     /// - Parameters:
@@ -31,7 +36,12 @@ struct ProgressiveImageView: View {
     ///   - contentMode: How the image should scale to fit its container. Defaults to `.fit`.
     ///   - lowResBlurRadius: The blur to apply to the low-res image. Defaults to `2.0`.
     ///   - noImageIcon: System icon name (e.g., "photo.fill") for no image placeholder. Defaults to `nil` (uses text).
-    init(lowResURL: URL?, highResURL: URL?, contentMode: ContentMode = .fit, lowResBlurRadius: CGFloat = 2.0, noImageText: String? = nil, noImageIcon: String? = nil) {
+    init(lowResURL: URL?,
+         highResURL: URL?,
+         contentMode: SwiftUI.ContentMode = .fit,
+         lowResBlurRadius: CGFloat = 2.0,
+         noImageText: String? = nil,
+         noImageIcon: String? = nil) {
         self.lowResURL = lowResURL
         self.highResURL = highResURL
         self.contentMode = contentMode
@@ -41,41 +51,56 @@ struct ProgressiveImageView: View {
     }
     
     var body: some View {
-        AsyncImage(url: highResURL) { phase in
-            switch phase {
-            case .success(let image):
-                // If the high-res image is successfully loaded, display it.
-                image
+        ZStack {
+            // Low-res image layer (loads first)
+            if !highResLoaded {
+                KFImage(lowResURL)
+                    .onSuccess { result in
+                        lowResLoaded = true
+                    }
+                    .onFailure { error in
+                        print("Low-res image failed: \(error)")
+                        if !highResLoaded {
+                            loadingFailed = true
+                        }
+                    }
+                    .placeholder {
+                        ProgressView()
+                    }
+                    .retry(maxCount: 2)
                     .resizable()
                     .aspectRatio(contentMode: contentMode)
-            case .empty, .failure:
-                // In case of loading (.empty) or failure (.failure) for the high-res image,
-                // attempt to show the low-res image as a fallback/placeholder.
-                AsyncImage(url: lowResURL) { lowResPhase in
-                    switch lowResPhase {
-                    case .success(let lowResImage):
-                        // If low-res loads, show it with blur.
-                        lowResImage
-                            .resizable()
-                            .aspectRatio(contentMode: contentMode)
-                            .blur(radius: lowResBlurRadius)
-                            .transition(.opacity) // Smooth transition if low-res loads fast
-                    case .failure:
-                        // If low-res also fails, show a general error/no image placeholder.
-                        defaultPlaceholder(text: "Failed to Load", icon: noImageIcon)
-                    case .empty:
-                        // Show a loading indicator while low-res image is loading.
-                        // This acts as the initial placeholder before any image is available.
-                        ProgressView()
-                    @unknown default:
-                        EmptyView()
+                    .blur(radius: lowResBlurRadius)
+                    .opacity(lowResLoaded && !highResLoaded ? 1 : 0)
+                    .animation(.easeInOut(duration: 0.3), value: lowResLoaded)
+            }
+            
+            // High-res image layer (loads after low-res)
+            KFImage(highResURL)
+                .onSuccess { result in
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        highResLoaded = true
                     }
                 }
-            @unknown default:
-                EmptyView()
+                .onFailure { error in
+                    print("High-res image failed: \(error)")
+                    // If high-res fails but we have low-res, keep showing low-res
+                    if !lowResLoaded {
+                        loadingFailed = true
+                    }
+                }
+                .retry(maxCount: 3)
+                .resizable()
+                .aspectRatio(contentMode: contentMode)
+                .opacity(highResLoaded ? 1 : 0)
+                .animation(.easeInOut(duration: 0.5), value: highResLoaded)
+            
+            // Error/fallback state
+            if loadingFailed && !lowResLoaded && !highResLoaded {
+                defaultPlaceholder(text: noImageText ?? "Failed to Load", icon: noImageIcon)
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity) // Ensure the image fills its container
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     /// Provides a default placeholder view with optional text and SF Symbol icon.

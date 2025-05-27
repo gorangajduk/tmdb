@@ -34,7 +34,8 @@ struct MovieDetailView: View {
                     lowResBlurRadius: 5.0, // More blur for backdrop
                     noImageIcon: "film.fill" // Use a system icon for backdrop placeholder if no image
                 )
-                .frame(maxWidth: .infinity, minHeight: 200, maxHeight: 300)
+                .frame(maxWidth: .infinity)
+                .frame(height: 200)
                 .clipped() // Crucial for fill contentMode
                 .shadow(radius: 10)
                 
