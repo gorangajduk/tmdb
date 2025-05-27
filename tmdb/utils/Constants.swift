@@ -9,8 +9,8 @@ import Foundation
 
 struct Constants {
     static let tmdbAPIKey: String = {
-        guard let apiKey = Bundle.main.infoDictionary?["TMDB_API_API_KEY"] as? String, !apiKey.isEmpty else {
-            fatalError("Error: TMDB_API_API_KEY not found in Info.plist or is empty. Please set it in your project's Build Settings.")
+        guard let apiKey = Bundle.main.infoDictionary?["TMDB_API_KEY"] as? String, !apiKey.isEmpty else {
+            fatalError("Error: TMDB_API_KEY not found in Info.plist or is empty. Please set it in your project's Build Settings.")
         }
         return apiKey
     }()
