@@ -14,25 +14,16 @@ struct MovieCardView: View {
     var body: some View {
         VStack(alignment: .leading) {
             ZStack(alignment: .topTrailing) {
-                if let url = movie.posterURL {
-                    AsyncImage(url: url) { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .cornerRadius(8)
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                } else {
-                    Rectangle()
-                        .fill(Color.gray.opacity(0.3))
-                        .cornerRadius(8)
-                        .overlay(
-                            Text("No Image")
-                                .foregroundColor(.white)
-                        )
-                }
+                ProgressiveImageView(
+                    lowResURL: movie.thumbnailPosterURL, // Your w92 image
+                    highResURL: movie.posterURL,       // Your w200 image
+                    contentMode: .fit,
+                    lowResBlurRadius: 2.0,
+                    noImageText: "No Poster"
+                )
+                .cornerRadius(8)
+                   
+                
                 Image(systemName: favoritesManager.isFavorite(movieID: movie.id) ? "star.fill" : "star")
                     .font(.title2)
                     .foregroundColor(favoritesManager.isFavorite(movieID: movie.id) ? .yellow : .gray)

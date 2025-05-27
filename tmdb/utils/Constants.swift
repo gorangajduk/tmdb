@@ -32,6 +32,8 @@ struct Constants {
     /// Defines standard image sizes available from The MovieDB API.
     /// These raw string values correspond to specific image width/height options.
     enum ImageSize: String {
+        /// A very small image size, ideal for quick loading thumbnails (92px width).
+        case thumbnail = "w92"
         /// A smaller image size, typically used for collection view cells or thumbnails (200px width).
         case small = "w200"
         /// A medium image size, suitable for detail screens or larger previews (500px width).

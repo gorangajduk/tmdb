@@ -27,54 +27,31 @@ struct MovieDetailView: View {
             VStack(alignment: .leading, spacing: 16) {
                 // MARK: - Backdrop Image
                 // Displays a large backdrop image at the top of the detail view.
-                if let backdropURL = movieDetailViewModel.movieDetail?.backdropURL {
-                    AsyncImage(url: backdropURL) { phase in
-                        if let image = phase.image {
-                            image
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                        } else if phase.error != nil {
-                            // Placeholder for error loading image
-                            Rectangle()
-                                .fill(Color.gray.opacity(0.3))
-                                .overlay(Image(systemName: "photo.fill").foregroundColor(.white))
-                        } else {
-                            // Placeholder while image is loading
-                            ProgressView()
-                                .frame(maxWidth: .infinity, minHeight: 200) // Ensure placeholder has height
-                        }
-                    }
-                    .frame(maxWidth: .infinity, minHeight: 200, maxHeight: 300)
-                    .clipped() // Clip content outside the frame
-                    .shadow(radius: 10)
-                }
-
+                ProgressiveImageView(
+                    lowResURL: movieDetailViewModel.movieDetail?.backdropThumbnailURL, // Your small backdrop image
+                    highResURL: movieDetailViewModel.movieDetail?.backdropURL, // Your large backdrop image
+                    contentMode: .fill,
+                    lowResBlurRadius: 5.0, // More blur for backdrop
+                    noImageIcon: "film.fill" // Use a system icon for backdrop placeholder if no image
+                )
+                .frame(maxWidth: .infinity, minHeight: 200, maxHeight: 300)
+                .clipped() // Crucial for fill contentMode
+                .shadow(radius: 10)
+                
                 // MARK: - Movie Header (Poster, Title, Tagline)
                 HStack(alignment: .top, spacing: 20) {
                     // Movie Poster
-                    if let posterURL = movieDetailViewModel.movieDetail?.detailPosterURL {
-                        AsyncImage(url: posterURL) { image in
-                            image
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 120, height: 180)
-                                .cornerRadius(12)
-                                .shadow(radius: 8)
-                        } placeholder: {
-                            ProgressView()
-                                .frame(width: 120, height: 180)
-                                .background(Color.gray.opacity(0.2))
-                                .cornerRadius(12)
-                        }
-                    } else {
-                        // Placeholder if no poster is available
-                        Rectangle()
-                            .fill(Color.gray.opacity(0.3))
-                            .frame(width: 120, height: 180)
-                            .cornerRadius(12)
-                            .overlay(Text("No Poster").foregroundColor(.white).font(.caption))
-                    }
-
+                    ProgressiveImageView(
+                        lowResURL: movieDetailViewModel.movieDetail?.posterURL, // Your w200 poster
+                        highResURL: movieDetailViewModel.movieDetail?.detailPosterURL, // Your w500 poster
+                        contentMode: .fit,
+                        lowResBlurRadius: 2.0,
+                        noImageText: "No Poster"
+                    )
+                    .frame(width: 120, height: 180)
+                    .cornerRadius(12)
+                    .shadow(radius: 8)
+                    
                     VStack(alignment: .leading, spacing: 8) {
                         HStack(alignment: .top) {
                             // Movie Title

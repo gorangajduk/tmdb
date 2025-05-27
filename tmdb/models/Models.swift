@@ -62,6 +62,13 @@ struct Movie: Codable, Identifiable {
 
     // MARK: - Computed Properties for Image URLs
 
+    /// Returns the URL for a very low-resolution thumbnail poster image.
+    /// This is intended for initial display and quick loading.
+    var thumbnailPosterURL: URL? {
+        guard let path = posterPath else { return nil }
+        return URL(string: "\(Constants.tmdbImageBaseURL)\(Constants.ImageSize.thumbnail.rawValue)\(path)")
+    }
+    
     /// A computed property that constructs the full URL for the movie's poster image,
     /// suitable for a small display (e.g., in a collection view cell).
     /// Returns `nil` if `posterPath` is not available.
@@ -107,15 +114,22 @@ struct MovieDetail: Codable, Identifiable {
     let genres: [Genre]?
     let productionCompanies: [ProductionCompany]?
     let status: String? // e.g., "Released", "In Production"
-    // Add more properties as needed based on TMDB /movie/{movie_id} response
-    // e.g., belongs_to_collection, budget, homepage, imdb_id, original_language,
-    // original_title, popularity, production_countries, revenue, spoken_languages
-
+    
+    var posterURL: URL? {
+        guard let path = posterPath else { return nil }
+        return URL(string: "\(Constants.tmdbImageBaseURL)\(Constants.ImageSize.small.rawValue)\(path)")
+    }
+    
     var detailPosterURL: URL? {
         guard let path = posterPath else { return nil }
         return URL(string: "\(Constants.tmdbImageBaseURL)\(Constants.ImageSize.medium.rawValue)\(path)")
     }
 
+    var backdropThumbnailURL: URL? {
+        guard let path = backdropPath else { return nil }
+        return URL(string: "\(Constants.tmdbImageBaseURL)\(Constants.ImageSize.small.rawValue)\(path)") // Use original or w780 for backdrop
+    }
+    
     var backdropURL: URL? {
         guard let path = backdropPath else { return nil }
         return URL(string: "\(Constants.tmdbImageBaseURL)\(Constants.ImageSize.original.rawValue)\(path)") // Use original or w780 for backdrop
