@@ -112,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8E45E622DE6157C005015C9 /* Build configuration list for PBXNativeTarget "tmdb" */;
 			buildPhases = (
+				D8E45E9F2DE61A79005015C9 /* ShellScript */,
 				D8E45E352DE6157A005015C9 /* Sources */,
 				D8E45E362DE6157A005015C9 /* Frameworks */,
 				D8E45E372DE6157A005015C9 /* Resources */,
@@ -243,6 +244,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8E45E9F2DE61A79005015C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$HOMEBREW_PREFIX/bin/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8E45E352DE6157A005015C9 /* Sources */ = {
