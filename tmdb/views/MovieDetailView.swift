@@ -13,6 +13,8 @@ struct MovieDetailView: View {
     /// An `ObservableObject` that manages the fetching and state of the movie details.
     /// The view will automatically re-render when `movieDetailViewModel`'s published properties change.
     @StateObject var movieDetailViewModel: MovieDetailViewModel
+    
+    @ObservedObject private var favoritesManager = FavoriteMoviesManager.shared
 
     /// Initializes the `MovieDetailView` with the ID of the movie to display.
     /// - Parameter movieId: The unique identifier of the movie for which details are to be fetched.
@@ -74,13 +76,27 @@ struct MovieDetailView: View {
                     }
 
                     VStack(alignment: .leading, spacing: 8) {
-                        // Movie Title
-                        Text(movieDetailViewModel.movieDetail?.title ?? "Loading...")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .lineLimit(2)
-                            .minimumScaleFactor(0.7)
-
+                        HStack(alignment: .top) {
+                            // Movie Title
+                            Text(movieDetailViewModel.movieDetail?.title ?? "Loading...")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .lineLimit(2)
+                                .minimumScaleFactor(0.7)
+                            Spacer()
+                            
+                            if let movieID = movieDetailViewModel.movieDetail?.id {
+                                // This is correct: Direct call on the observed object
+                                Button {
+                                    favoritesManager.toggleFavorite(movieID: movieID)
+                                } label: {
+                                    Image(systemName: favoritesManager.isFavorite(movieID: movieID) ? "star.fill" : "star") // Correct!
+                                        .font(.largeTitle)
+                                        .foregroundColor(favoritesManager.isFavorite(movieID: movieID) ? .yellow : .gray) // Correct!
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
                         // Movie Tagline (if available)
                         if let tagline = movieDetailViewModel.movieDetail?.tagline, !tagline.isEmpty {
                             Text(tagline)
