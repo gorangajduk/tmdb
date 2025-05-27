@@ -36,6 +36,7 @@ class TrendingMoviesViewController: UIViewController {
         super.viewDidLoad()
         title = "Trending Movies"
         setupCollectionView()
+        setupNavigationBar()
         bindViewModel()
     }
 
@@ -46,14 +47,31 @@ class TrendingMoviesViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         // Register the custom UICollectionViewCell which acts as a container for SwiftUI views.
-        collectionView.register(MovieCollectionViewCell.self, forCellWithReuseIdentifier: MovieCollectionViewCell.reuseIdentifier)
+        collectionView.register(MovieCollectionViewCell.self,
+                                forCellWithReuseIdentifier: MovieCollectionViewCell.reuseIdentifier)
 
         // Configure the flow layout for the collection view.
         // This provides basic grid-like arrangement with predefined item sizes and section insets.
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: (collectionView.bounds.width / 2) - 15, height: 250) // Example size, adjusted in delegate for responsiveness
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.itemSize = CGSize(width: (collectionView.bounds.width / 2) - 15,
+                                 height: 250) // Example size, adjusted in delegate for responsiveness
+        layout.sectionInset = UIEdgeInsets(top: 10,
+                                           left: 10,
+                                           bottom: 10,
+                                           right: 10)
         collectionView.collectionViewLayout = layout
+    }
+    
+    /// Configures the navigation bar with a search button.
+    private func setupNavigationBar() {
+        // Create a UIBarButtonItem with a system search icon.
+        let searchButton = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"),
+                                           style: .plain,
+                                           target: self,
+                                           action: #selector(searchButtonTapped))
+        
+        // Assign the button to the right side of the navigation bar.
+        navigationItem.rightBarButtonItem = searchButton
     }
 
     /// Establishes Combine subscriptions to the ViewModel's published properties.
@@ -83,18 +101,40 @@ class TrendingMoviesViewController: UIViewController {
     /// Presents a UIAlertController to display an error message to the user.
     /// - Parameter message: The localized description of the error to be displayed.
     private func presentErrorAlert(message: String) {
-        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let alertController = UIAlertController(title: "Error",
+                                                message: message,
+                                                preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK",
+                                     style: .default,
+                                     handler: nil)
         alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
+        present(alertController,
+                animated: true,
+                completion: nil)
+    }
+    
+    /// Presents the `SearchMoviesView` modally when the search button is tapped.
+    /// This SwiftUI view, wrapped in a `UIHostingController`, slides up from the bottom,
+    /// providing a dedicated interface for movie search.
+    @objc private func searchButtonTapped() {
+        // Create the SwiftUI view for searching movies.
+        let searchSwiftUIView = SearchMoviesView()
+        
+        // Wrap the SwiftUI view in a UIHostingController to present it from UIKit.
+        let searchViewController = UIHostingController(rootView: searchSwiftUIView)
+        
+        // Present the search view controller modally, animating its appearance.
+        present(searchViewController, animated: true, completion: nil)
     }
 
     // MARK: - UIHostingController Lifecycle Management in Cells
 
     /// Handles view transitions (e.g., device rotation) to invalidate the collection view's layout.
     /// This ensures the layout adapts correctly to the new size and orientation.
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
+    override func viewWillTransition(to size: CGSize,
+                                     with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size,
+                                 with: coordinator)
         coordinator.animate(alongsideTransition: { [weak self] _ in
             // Invalidate the layout to trigger `collectionView(_:layout:sizeForItemAt:)`
             // recalculation, allowing for adaptive item sizing.
@@ -105,8 +145,11 @@ class TrendingMoviesViewController: UIViewController {
     /// Delegate method called just before a cell is displayed.
     /// This is where the UIHostingController for the cell's SwiftUI content is
     /// added as a child view controller to ensure proper lifecycle management.
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if let movieCell = cell as? MovieCollectionViewCell, let host = movieCell.hostingController {
+    func collectionView(_ collectionView: UICollectionView,
+                        willDisplay cell: UICollectionViewCell,
+                        forItemAt indexPath: IndexPath) {
+        if let movieCell = cell as? MovieCollectionViewCell,
+            let host = movieCell.hostingController {
             // Add the hosting controller as a child view controller of this UIViewController.
             // This is essential for SwiftUI view's lifecycle methods (e.g., .onAppear) to work.
             addChild(host)
@@ -124,8 +167,11 @@ class TrendingMoviesViewController: UIViewController {
     /// Delegate method called after a cell is no longer visible.
     /// This is where the UIHostingController for the cell's SwiftUI content is
     /// removed from the child view controller hierarchy to clean up resources.
-    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if let movieCell = cell as? MovieCollectionViewCell, let host = movieCell.hostingController {
+    func collectionView(_ collectionView: UICollectionView,
+                        didEndDisplaying cell: UICollectionViewCell,
+                        forItemAt indexPath: IndexPath) {
+        if let movieCell = cell as? MovieCollectionViewCell,
+            let host = movieCell.hostingController {
             // Notify the host that it will be removed from its parent view controller.
             host.willMove(toParent: nil)
             // Remove the host from the child view controller hierarchy.
@@ -140,13 +186,16 @@ class TrendingMoviesViewController: UIViewController {
 
 extension TrendingMoviesViewController: UICollectionViewDataSource {
     /// Returns the number of items to display in the collection view.
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
         return viewModel.movies.count
     }
 
     /// Provides a configured cell for each item in the collection view.
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieCollectionViewCell.reuseIdentifier, for: indexPath) as? MovieCollectionViewCell else {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieCollectionViewCell.reuseIdentifier,
+                                                            for: indexPath) as? MovieCollectionViewCell else {
             fatalError("Failed to dequeue MovieCollectionViewCell. Ensure it's registered correctly.")
         }
         let movie = viewModel.movies[indexPath.item]
@@ -160,7 +209,8 @@ extension TrendingMoviesViewController: UICollectionViewDataSource {
 extension TrendingMoviesViewController: UICollectionViewDelegate {
     /// Handles item selection in the collection view by navigating to the Movie Detail Screen.
     /// - Parameter indexPath: The index path of the selected movie.
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
         let selectedMovie = viewModel.movies[indexPath.item]
         
         // 1. Create an instance of the SwiftUI MovieDetailView with the selected movie's ID.
@@ -175,7 +225,8 @@ extension TrendingMoviesViewController: UICollectionViewDelegate {
         // 4. Push the UIHostingController onto the navigation stack.
         // Ensure that TrendingMoviesViewController is embedded in a UINavigationController
         // in your Storyboard or programmatically.
-        navigationController?.pushViewController(detailViewController, animated: true)
+        navigationController?.pushViewController(detailViewController,
+                                                 animated: true)
     }
 }
 
@@ -188,7 +239,9 @@ extension TrendingMoviesViewController: UICollectionViewDelegateFlowLayout {
     ///   - collectionViewLayout: The layout object for the collection view.
     ///   - indexPath: The index path of the item.
     /// - Returns: The size for the item at the specified index path.
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         let padding: CGFloat = 10 // Horizontal padding on each side of the collection view
         let minimumInteritemSpacing: CGFloat = 10 // Minimum space between items
         // Determine number of items per row based on device type.
