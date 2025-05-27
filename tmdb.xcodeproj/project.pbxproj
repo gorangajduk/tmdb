@@ -327,6 +327,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TMDB_API_KEY = 2cc1be47645a612c36ff0268551b50cc;
 			};
 			name = Debug;
 		};
@@ -354,6 +355,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TMDB_API_KEY = 2cc1be47645a612c36ff0268551b50cc;
 			};
 			name = Release;
 		};
