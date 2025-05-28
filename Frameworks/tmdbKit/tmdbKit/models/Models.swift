@@ -84,6 +84,24 @@ public struct Movie: Codable, Identifiable {
         guard let path = posterPath else { return nil }
         return URL(string: "\(Constants.tmdbImageBaseURL)\(Constants.ImageSize.medium.rawValue)\(path)")
     }
+    
+    // MARK: - Explicit Public Initializer
+    /// Creates a new Movie instance.
+    public init(id: Int,
+                title: String,
+                overview: String,
+                posterPath: String?,
+                releaseDate: String?,
+                voteAverage: Double?,
+                voteCount: Int?) {
+        self.id = id
+        self.title = title
+        self.overview = overview
+        self.posterPath = posterPath
+        self.releaseDate = releaseDate
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
+    }
 
     /// Defines custom mapping between JSON keys (snake_case) and Swift property names (camelCase).
     /// This is necessary for properties whose names differ from the API's JSON keys.
@@ -151,6 +169,36 @@ public struct MovieDetail: Codable, Identifiable {
         return String(format: "%.1f", average)
     }
 
+    // MARK: - Explicit Public Initializer
+    /// Creates a new MovieDetails instance.
+    public init(id: Int,
+                title: String,
+                overview: String? = nil,
+                posterPath: String? = nil,
+                backdropPath: String? = nil,
+                releaseDate: String? = nil,
+                runtime: Int? = nil,
+                tagline: String? = nil,
+                voteAverage: Double? = nil,
+                voteCount: Int? = nil,
+                genres: [Genre]? = nil,
+                productionCompanies: [ProductionCompany]? = nil,
+                status: String? = nil) {
+        self.id = id
+        self.title = title
+        self.overview = overview
+        self.posterPath = posterPath
+        self.backdropPath = backdropPath
+        self.releaseDate = releaseDate
+        self.runtime = runtime
+        self.tagline = tagline
+        self.voteAverage = voteAverage
+        self.voteCount = voteCount
+        self.genres = genres
+        self.productionCompanies = productionCompanies
+        self.status = status
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id, title, overview, tagline, runtime, status, genres
         case posterPath = "poster_path"
@@ -166,6 +214,13 @@ public struct MovieDetail: Codable, Identifiable {
 public struct Genre: Codable, Identifiable {
     public let id: Int
     public let name: String
+    
+    // MARK: - Explicit Public Initializer
+    /// Creates a new Genre instance.
+    public init(id: Int, name: String) {
+        self.id = id
+        self.name = name
+    }
 }
 
 /// Represents a production company associated with a movie.
@@ -174,6 +229,15 @@ public struct ProductionCompany: Codable, Identifiable {
     public let name: String
     public let logoPath: String?
     public let originCountry: String?
+    
+    // MARK: - Explicit Public Initializer
+    /// Creates a new ProductionCompany instance.
+    public init(id: Int, name: String, logoPath: String? = nil, originCountry: String? = nil) {
+        self.id = id
+        self.name = name
+        self.logoPath = logoPath
+        self.originCountry = originCountry
+    }
 
     enum CodingKeys: String, CodingKey {
         case id, name
