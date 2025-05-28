@@ -16,7 +16,7 @@ public struct Constants {
     /// which is populated from a User-Defined Build Setting in Xcode.
     /// A fatal error will occur if the key is missing or empty, ensuring critical configuration is present.
     public static let tmdbAPIKey: String = {
-        guard let apiKey = Bundle.main.infoDictionary?["TMDB_API_KEY"] as? String, !apiKey.isEmpty else {
+        guard let apiKey = ProcessInfo.processInfo.environment["TMDB_API_KEY_TEST"], !apiKey.isEmpty else {
             fatalError("Error: TMDB_API_KEY not found in Info.plist or is empty. Please set it in your project's Build Settings.")
         }
         return apiKey
@@ -61,6 +61,5 @@ public struct Constants {
         ///   - page: The page number of search results to fetch.
         /// - Returns: A string representing the full API path for movie search.
         public static func searchMovies(query: String, page: Int) -> String { "/search/movie?api_key=\(Constants.tmdbAPIKey)&query=\(query)&page=\(page)" }
-        // TODO: Add series search endpoint and other relevant endpoints as needed.
     }
 }

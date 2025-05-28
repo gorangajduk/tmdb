@@ -6,13 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D88C64252DE7757400AF04BA /* tmdbKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E45EC92DE65697005015C9 /* tmdbKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D88C64262DE7757400AF04BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8E45EC02DE65697005015C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8E45EC82DE65697005015C9;
+			remoteInfo = tmdbKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D88C64212DE7757400AF04BA /* tmdbKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45EC92DE65697005015C9 /* tmdbKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tmdbKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45F1E2DE65B00005015C9 /* tmdbKitTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tmdbKitTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45F2C2DE65B25005015C9 /* tmdbKitMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = tmdbKitMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D88C64692DE77DE400AF04BA /* Exceptions for "tmdbKitTests" folder in "tmdbKitTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D88C64202DE7757400AF04BA /* tmdbKitTests */;
+		};
 		D8E45F372DE65B3B005015C9 /* Exceptions for "tmdbKit" folder in "tmdbKitTV" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -20,6 +42,7 @@
 				models/Models.swift,
 				service/NetworkService.swift,
 				utils/Constants.swift,
+				utils/URLSessionProtocol.swift,
 			);
 			target = D8E45F1D2DE65B00005015C9 /* tmdbKitTV */;
 		};
@@ -30,12 +53,21 @@
 				models/Models.swift,
 				service/NetworkService.swift,
 				utils/Constants.swift,
+				utils/URLSessionProtocol.swift,
 			);
 			target = D8E45F2B2DE65B25005015C9 /* tmdbKitMac */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D88C64222DE7757400AF04BA /* tmdbKitTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D88C64692DE77DE400AF04BA /* Exceptions for "tmdbKitTests" folder in "tmdbKitTests" target */,
+			);
+			path = tmdbKitTests;
+			sourceTree = "<group>";
+		};
 		D8E45ECB2DE65697005015C9 /* tmdbKit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -58,6 +90,14 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D88C641E2DE7757400AF04BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88C64252DE7757400AF04BA /* tmdbKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8E45EC62DE65697005015C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,6 +128,7 @@
 				D8E45ECB2DE65697005015C9 /* tmdbKit */,
 				D8E45F1F2DE65B00005015C9 /* tmdbKitTV */,
 				D8E45F2D2DE65B25005015C9 /* tmdbKitMac */,
+				D88C64222DE7757400AF04BA /* tmdbKitTests */,
 				D8E45ECA2DE65697005015C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +139,7 @@
 				D8E45EC92DE65697005015C9 /* tmdbKit.framework */,
 				D8E45F1E2DE65B00005015C9 /* tmdbKitTV.framework */,
 				D8E45F2C2DE65B25005015C9 /* tmdbKitMac.framework */,
+				D88C64212DE7757400AF04BA /* tmdbKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +171,29 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D88C64202DE7757400AF04BA /* tmdbKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D88C642A2DE7757400AF04BA /* Build configuration list for PBXNativeTarget "tmdbKitTests" */;
+			buildPhases = (
+				D88C641D2DE7757400AF04BA /* Sources */,
+				D88C641E2DE7757400AF04BA /* Frameworks */,
+				D88C641F2DE7757400AF04BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D88C64272DE7757400AF04BA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D88C64222DE7757400AF04BA /* tmdbKitTests */,
+			);
+			name = tmdbKitTests;
+			packageProductDependencies = (
+			);
+			productName = tmdbKitTests;
+			productReference = D88C64212DE7757400AF04BA /* tmdbKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D8E45EC82DE65697005015C9 /* tmdbKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8E45ED22DE65697005015C9 /* Build configuration list for PBXNativeTarget "tmdbKit" */;
@@ -208,6 +273,9 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					D88C64202DE7757400AF04BA = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					D8E45EC82DE65697005015C9 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -236,11 +304,19 @@
 				D8E45EC82DE65697005015C9 /* tmdbKit */,
 				D8E45F1D2DE65B00005015C9 /* tmdbKitTV */,
 				D8E45F2B2DE65B25005015C9 /* tmdbKitMac */,
+				D88C64202DE7757400AF04BA /* tmdbKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D88C641F2DE7757400AF04BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8E45EC72DE65697005015C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +341,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D88C641D2DE7757400AF04BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8E45EC52DE65697005015C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,7 +371,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D88C64272DE7757400AF04BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8E45EC82DE65697005015C9 /* tmdbKit */;
+			targetProxy = D88C64262DE7757400AF04BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D88C64282DE7757400AF04BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tmdbKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gajduk.tmdbKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D88C64292DE7757400AF04BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tmdbKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gajduk.tmdbKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D8E45ED02DE65697005015C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,6 +552,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +585,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -617,6 +744,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D88C642A2DE7757400AF04BA /* Build configuration list for PBXNativeTarget "tmdbKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88C64282DE7757400AF04BA /* Debug */,
+				D88C64292DE7757400AF04BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D8E45EC32DE65697005015C9 /* Build configuration list for PBXProject "tmdbKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -19,10 +19,10 @@ final public class FavoriteMoviesManager: ObservableObject {
 
     /// A published set of movie IDs that are currently marked as favorites.
     /// Any SwiftUI view observing this property will automatically update when the set changes.
-    @Published public private(set) var favoriteMovieIDs: Set<Int> = []
+    @Published public internal(set) var favoriteMovieIDs: Set<Int> = []
 
     /// The key used to store and retrieve favorite movie IDs from `UserDefaults`.
-    private let favoritesKey = "favoriteMovieIDs"
+    internal let favoritesKey = "favoriteMovieIDs"
 
     /// Private initializer to enforce the singleton pattern.
     private init() {
@@ -30,7 +30,7 @@ final public class FavoriteMoviesManager: ObservableObject {
     }
 
     /// Loads the saved favorite movie IDs from `UserDefaults`.
-    private func loadFavorites() {
+    internal func loadFavorites() {
         if let data = UserDefaults.standard.data(forKey: favoritesKey),
            let decodedIDs = try? JSONDecoder().decode(Set<Int>.self, from: data) {
             self.favoriteMovieIDs = decodedIDs
@@ -42,7 +42,7 @@ final public class FavoriteMoviesManager: ObservableObject {
     }
 
     /// Saves the current set of favorite movie IDs to `UserDefaults`.
-    private func saveFavorites() {
+    internal func saveFavorites() {
         if let encoded = try? JSONEncoder().encode(favoriteMovieIDs) {
             UserDefaults.standard.set(encoded, forKey: favoritesKey)
             print("Saved favorites: \(favoriteMovieIDs.count) movies")

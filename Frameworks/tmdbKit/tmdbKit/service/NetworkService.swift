@@ -8,7 +8,7 @@
 import Foundation
 
 /// Defines custom errors that can occur during network operations.
-public enum NetworkError: Error, LocalizedError {
+public enum NetworkError: Error, LocalizedError, Equatable {
     /// Indicates that the URL constructed for the request was invalid.
     case invalidURL
     
@@ -23,6 +23,26 @@ public enum NetworkError: Error, LocalizedError {
     
     /// Signifies a server-side error, including the HTTP status code received.
     case serverError(statusCode: Int)
+    
+    // MARK: - Equatable Conformance
+    // This allows us to compare two NetworkError instances.
+    public static func == (lhs: NetworkError, rhs: NetworkError) -> Bool {
+        switch (lhs, rhs) {
+        case (.invalidURL, .invalidURL),
+            (.invalidResponse, .invalidResponse):
+            return true
+            
+        case let (.requestFailed(lhsError), .requestFailed(rhsError)),
+            let (.decodingFailed(lhsError), .decodingFailed(rhsError)):
+            return lhsError.localizedDescription == rhsError.localizedDescription
+            
+        case let (.serverError(lhsCode), .serverError(rhsCode)):
+            return lhsCode == rhsCode
+            
+        default:
+            return false
+        }
+    }
     
     // Provides a localized description for each error, useful for user-facing alerts.
     public var errorDescription: String? {
@@ -48,9 +68,15 @@ public class NetworkService {
     /// This provides a convenient global access point for making network requests.
     public static let shared = NetworkService()
     
+    /// The URLSession instance used for making network requests.
+    private let urlSession: URLSessionProtocol
+    
     /// Private initializer to ensure that `NetworkService` can only be instantiated
     /// through its `shared` singleton property, enforcing the singleton pattern.
-    private init() {}
+    /// This initializer takes a URLSessionProtocol to allow for mocking in tests.
+    init(urlSession: URLSessionProtocol = URLSession.shared) {
+        self.urlSession = urlSession
+    }
     
     /// Performs a generic network request to a specified API endpoint and decodes the response.
     /// - Parameters:
@@ -71,7 +97,8 @@ public class NetworkService {
         do {
             // Perform the network request using URLSession's async/await data(for:) method.
             // This suspends the task until the request completes.
-            let (data, response) = try await URLSession.shared.data(for: request)
+            let (data, response) = try await urlSession.data(for: request,
+                                                             delegate: nil)
             
             // Attempt to cast the URLResponse to HTTPURLResponse to access status codes.
             guard let httpResponse = response as? HTTPURLResponse else {
@@ -99,6 +126,9 @@ public class NetworkService {
             // Re-throw custom NetworkErrors directly, or wrap other errors as requestFailed.
             if error is NetworkError {
                 throw error // Re-throw our custom errors directly
+            } else if let decodingError = error as? DecodingError {
+                // Catch decoding errors specifically
+                throw NetworkError.decodingFailed(decodingError)
             } else {
                 // Wrap any other system-level errors (e.g., no internet connection)
                 throw NetworkError.requestFailed(error)
