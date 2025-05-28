@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios18.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name tmdbKit
+// swift-module-flags: -target arm64-apple-ios18.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name tmdbKit
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1
 import Combine
 import Foundation
@@ -8,27 +8,11 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum NetworkError : Swift.Error, Foundation.LocalizedError {
-  case invalidURL
-  case requestFailed(any Swift.Error)
-  case invalidResponse
-  case decodingFailed(any Swift.Error)
-  case serverError(statusCode: Swift.Int)
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers public class NetworkService {
-  public static let shared: tmdbKit.NetworkService
-  public func request<T>(endpoint: Swift.String) async throws -> T where T : Swift.Decodable, T : Swift.Encodable
-  public func fetchTrendingMovies(page: Swift.Int) async throws -> tmdbKit.TrendingMoviesResponse
-  public func fetchMovieDetail(id: Swift.Int) async throws -> tmdbKit.MovieDetail
-  public func searchMovies(query: Swift.String, page: Swift.Int) async throws -> tmdbKit.TrendingMoviesResponse
-  @objc deinit
-}
 public struct Constants {
   public static let tmdbAPIKey: Swift.String
   public static let tmdbBaseURL: Swift.String
+  public static let tmdbImageBaseURLProd: Swift.String
+  public static let tmdbImageBaseURLDev: Swift.String
   public static let tmdbImageBaseURL: Swift.String
   public enum ImageSize : Swift.String {
     case thumbnail
@@ -162,6 +146,25 @@ public struct ProductionCompany : Swift.Codable, Swift.Identifiable {
   public typealias ID = Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public enum NetworkError : Swift.Error, Foundation.LocalizedError, Swift.Equatable {
+  case invalidURL
+  case requestFailed(any Swift.Error)
+  case invalidResponse
+  case decodingFailed(any Swift.Error)
+  case serverError(statusCode: Swift.Int)
+  public static func == (lhs: tmdbKit.NetworkError, rhs: tmdbKit.NetworkError) -> Swift.Bool
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NetworkService {
+  public static let shared: tmdbKit.NetworkService
+  public func request<T>(endpoint: Swift.String) async throws -> T where T : Swift.Decodable, T : Swift.Encodable
+  public func fetchTrendingMovies(page: Swift.Int) async throws -> tmdbKit.TrendingMoviesResponse
+  public func fetchMovieDetail(id: Swift.Int) async throws -> tmdbKit.MovieDetail
+  public func searchMovies(query: Swift.String, page: Swift.Int) async throws -> tmdbKit.TrendingMoviesResponse
+  @objc deinit
 }
 extension tmdbKit.Constants.ImageSize : Swift.Equatable {}
 extension tmdbKit.Constants.ImageSize : Swift.Hashable {}

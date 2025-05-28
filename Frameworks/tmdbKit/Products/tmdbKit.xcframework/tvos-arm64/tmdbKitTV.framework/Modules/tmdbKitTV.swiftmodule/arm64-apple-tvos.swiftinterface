@@ -8,19 +8,6 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class FavoriteMoviesManager : Foundation.ObservableObject {
-  @_Concurrency.MainActor public static let shared: tmdbKitTV.FavoriteMoviesManager
-  @Combine.Published @_projectedValueProperty($favoriteMovieIDs) @_Concurrency.MainActor final public var favoriteMovieIDs: Swift.Set<Swift.Int> {
-    get
-  }
-  @_Concurrency.MainActor final public var $favoriteMovieIDs: Combine.Published<Swift.Set<Swift.Int>>.Publisher {
-    get
-  }
-  @_Concurrency.MainActor final public func toggleFavorite(movieID: Swift.Int)
-  @_Concurrency.MainActor final public func isFavorite(movieID: Swift.Int) -> Swift.Bool
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
 public struct TrendingMoviesResponse : Swift.Codable {
   public let page: Swift.Int
   public let results: [tmdbKitTV.Movie]
@@ -124,9 +111,30 @@ public struct ProductionCompany : Swift.Codable, Swift.Identifiable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum NetworkError : Swift.Error, Foundation.LocalizedError, Swift.Equatable {
+  case invalidURL
+  case requestFailed(any Swift.Error)
+  case invalidResponse
+  case decodingFailed(any Swift.Error)
+  case serverError(statusCode: Swift.Int)
+  public static func == (lhs: tmdbKitTV.NetworkError, rhs: tmdbKitTV.NetworkError) -> Swift.Bool
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NetworkService {
+  public static let shared: tmdbKitTV.NetworkService
+  public func request<T>(endpoint: Swift.String) async throws -> T where T : Swift.Decodable, T : Swift.Encodable
+  public func fetchTrendingMovies(page: Swift.Int) async throws -> tmdbKitTV.TrendingMoviesResponse
+  public func fetchMovieDetail(id: Swift.Int) async throws -> tmdbKitTV.MovieDetail
+  public func searchMovies(query: Swift.String, page: Swift.Int) async throws -> tmdbKitTV.TrendingMoviesResponse
+  @objc deinit
+}
 public struct Constants {
   public static let tmdbAPIKey: Swift.String
   public static let tmdbBaseURL: Swift.String
+  public static let tmdbImageBaseURLProd: Swift.String
+  public static let tmdbImageBaseURLDev: Swift.String
   public static let tmdbImageBaseURL: Swift.String
   public enum ImageSize : Swift.String {
     case thumbnail
@@ -145,28 +153,23 @@ public struct Constants {
     public static func searchMovies(query: Swift.String, page: Swift.Int) -> Swift.String
   }
 }
-public enum NetworkError : Swift.Error, Foundation.LocalizedError {
-  case invalidURL
-  case requestFailed(any Swift.Error)
-  case invalidResponse
-  case decodingFailed(any Swift.Error)
-  case serverError(statusCode: Swift.Int)
-  public var errorDescription: Swift.String? {
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class FavoriteMoviesManager : Foundation.ObservableObject {
+  @_Concurrency.MainActor public static let shared: tmdbKitTV.FavoriteMoviesManager
+  @Combine.Published @_projectedValueProperty($favoriteMovieIDs) @_Concurrency.MainActor final public var favoriteMovieIDs: Swift.Set<Swift.Int> {
     get
   }
-}
-@_hasMissingDesignatedInitializers public class NetworkService {
-  public static let shared: tmdbKitTV.NetworkService
-  public func request<T>(endpoint: Swift.String) async throws -> T where T : Swift.Decodable, T : Swift.Encodable
-  public func fetchTrendingMovies(page: Swift.Int) async throws -> tmdbKitTV.TrendingMoviesResponse
-  public func fetchMovieDetail(id: Swift.Int) async throws -> tmdbKitTV.MovieDetail
-  public func searchMovies(query: Swift.String, page: Swift.Int) async throws -> tmdbKitTV.TrendingMoviesResponse
+  @_Concurrency.MainActor final public var $favoriteMovieIDs: Combine.Published<Swift.Set<Swift.Int>>.Publisher {
+    get
+  }
+  @_Concurrency.MainActor final public func toggleFavorite(movieID: Swift.Int)
+  @_Concurrency.MainActor final public func isFavorite(movieID: Swift.Int) -> Swift.Bool
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
-extension tmdbKitTV.FavoriteMoviesManager : Swift.Sendable {}
 extension tmdbKitTV.TrendingMoviesResponse.CodingKeys : Swift.Equatable {}
 extension tmdbKitTV.TrendingMoviesResponse.CodingKeys : Swift.Hashable {}
 extension tmdbKitTV.TrendingMoviesResponse.CodingKeys : Swift.RawRepresentable {}
 extension tmdbKitTV.Constants.ImageSize : Swift.Equatable {}
 extension tmdbKitTV.Constants.ImageSize : Swift.Hashable {}
 extension tmdbKitTV.Constants.ImageSize : Swift.RawRepresentable {}
+extension tmdbKitTV.FavoriteMoviesManager : Swift.Sendable {}

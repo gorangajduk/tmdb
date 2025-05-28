@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		k3v4IDEka6IdHU2qtvqa9xz9l8o=
+		7Crc+md4w4BgJb8U5Da1b5jbcqw=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zzHC/NbxOKkORfqJFy+S5aXT350=
+		aeR5JrkItRYAcIUrOq01iGwZ41E=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KrQ9WUH0nvycLd3jj6RLsVukXV0=
+		bnchqPX79fzPFcu7jOjAD1E/4hs=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cCZzse3zA2E1CVj8+82asj4y8fY=
+		wIBoWFd5x4eb/1dAwDnH1AEgfoE=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KrQ9WUH0nvycLd3jj6RLsVukXV0=
+		bnchqPX79fzPFcu7jOjAD1E/4hs=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dTGLjifq3UXiS92XurkGXQurGlY=
+		QUZ2lxxLuHxcu3gTw34HKGIuQt8=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zzHC/NbxOKkORfqJFy+S5aXT350=
+		aeR5JrkItRYAcIUrOq01iGwZ41E=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hiw9zWkjHe26LA+Vho0EK6QAdco=
+		RxvYEHU3zaxhAFpBpozYXxY9uWk=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FXlZewU6mEjDBCW2wd0gG8BX/z0=
+		aiBcSoH0OlD1Ro6omBE1hFbO8Lg=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hiw9zWkjHe26LA+Vho0EK6QAdco=
+		RxvYEHU3zaxhAFpBpozYXxY9uWk=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bf3ZISzw+6TjOsb3tRUVSVhjpgg=
+		HNUABhjhpH+buC3m83gNFpOOeRE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Py6SurNIYgtOSd1s2FOGCKnt6vPnj4xXwtSnahCpsiQ=
+			me4gRMMiki9Qd+oGNk697WjMUIyISrW8HUIDH/qVjjQ=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2vnxyGMC3jX0UiQQfocEWdu9Bu2fXdY2fhloA8KF4v8=
+			HUv8bVrvdLBelu85Vo6gB07HokXQzJX2fU8YKPIbSW0=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bvLIqG4+Eom96hWvs22U9hWBQJ/mHwEt8VjSXt24blY=
+			vYPU1FTKhEPXWED2745379Im1O6O65f220kuDFnTOfE=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2vnxyGMC3jX0UiQQfocEWdu9Bu2fXdY2fhloA8KF4v8=
+			HUv8bVrvdLBelu85Vo6gB07HokXQzJX2fU8YKPIbSW0=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R3PdWuoJzKlYlCxgq8ghiFA8XZ8sbbJgPClh6nYdGg0=
+			+wM83U+/8n+2HPLFjy4w1MNDt/pzWGIhTGy8nUxOeoc=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Py6SurNIYgtOSd1s2FOGCKnt6vPnj4xXwtSnahCpsiQ=
+			me4gRMMiki9Qd+oGNk697WjMUIyISrW8HUIDH/qVjjQ=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zO3TjZjeGQLzqusPi1K5fpMIKy8nfI/SK6qiMq/FJUw=
+			ciw8+mqIu3l75s9+Vj6FogyB1cnElN4HMri77misBgM=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXPZEyZWzZI2QM4XpuB3dXqBgL8Xp+yvLjcMs9r9yA0=
+			n4Ac8solqP5YRNxH8cej2JWw4sFldxfjqYZbif843Eo=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zO3TjZjeGQLzqusPi1K5fpMIKy8nfI/SK6qiMq/FJUw=
+			ciw8+mqIu3l75s9+Vj6FogyB1cnElN4HMri77misBgM=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v1MsLZgaKgJM37WdIhtYywzJH+Q6bEPtfSpXCTsw2V0=
+			xpwIp5Q65pM52vXyPzPm/MU82cshCpHxEcHnQm2LuJM=
 			</data>
 		</dict>
 	</dict>
