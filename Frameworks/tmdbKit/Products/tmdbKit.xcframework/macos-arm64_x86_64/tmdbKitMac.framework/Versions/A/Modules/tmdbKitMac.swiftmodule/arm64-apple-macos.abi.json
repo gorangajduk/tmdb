@@ -15,610 +15,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "NetworkError",
-        "printedName": "NetworkError",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "invalidURL",
-            "printedName": "invalidURL",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(tmdbKitMac.NetworkError.Type) -> tmdbKitMac.NetworkError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NetworkError",
-                    "printedName": "tmdbKitMac.NetworkError",
-                    "usr": "s:10tmdbKitMac12NetworkErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "tmdbKitMac.NetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "tmdbKitMac.NetworkError",
-                        "usr": "s:10tmdbKitMac12NetworkErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10tmdbKitMac12NetworkErrorO10invalidURLyA2CmF",
-            "mangledName": "$s10tmdbKitMac12NetworkErrorO10invalidURLyA2CmF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "requestFailed",
-            "printedName": "requestFailed",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(tmdbKitMac.NetworkError.Type) -> (any Swift.Error) -> tmdbKitMac.NetworkError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(any Swift.Error) -> tmdbKitMac.NetworkError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "tmdbKitMac.NetworkError",
-                        "usr": "s:10tmdbKitMac12NetworkErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "tmdbKitMac.NetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "tmdbKitMac.NetworkError",
-                        "usr": "s:10tmdbKitMac12NetworkErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10tmdbKitMac12NetworkErrorO13requestFailedyACs0E0_pcACmF",
-            "mangledName": "$s10tmdbKitMac12NetworkErrorO13requestFailedyACs0E0_pcACmF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "invalidResponse",
-            "printedName": "invalidResponse",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(tmdbKitMac.NetworkError.Type) -> tmdbKitMac.NetworkError",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NetworkError",
-                    "printedName": "tmdbKitMac.NetworkError",
-                    "usr": "s:10tmdbKitMac12NetworkErrorO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "tmdbKitMac.NetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "tmdbKitMac.NetworkError",
-                        "usr": "s:10tmdbKitMac12NetworkErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10tmdbKitMac12NetworkErrorO15invalidResponseyA2CmF",
-            "mangledName": "$s10tmdbKitMac12NetworkErrorO15invalidResponseyA2CmF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "decodingFailed",
-            "printedName": "decodingFailed",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(tmdbKitMac.NetworkError.Type) -> (any Swift.Error) -> tmdbKitMac.NetworkError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(any Swift.Error) -> tmdbKitMac.NetworkError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "tmdbKitMac.NetworkError",
-                        "usr": "s:10tmdbKitMac12NetworkErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "tmdbKitMac.NetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "tmdbKitMac.NetworkError",
-                        "usr": "s:10tmdbKitMac12NetworkErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10tmdbKitMac12NetworkErrorO14decodingFailedyACs0E0_pcACmF",
-            "mangledName": "$s10tmdbKitMac12NetworkErrorO14decodingFailedyACs0E0_pcACmF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "serverError",
-            "printedName": "serverError",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(tmdbKitMac.NetworkError.Type) -> (Swift.Int) -> tmdbKitMac.NetworkError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int) -> tmdbKitMac.NetworkError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "tmdbKitMac.NetworkError",
-                        "usr": "s:10tmdbKitMac12NetworkErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(statusCode: Swift.Int)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "tmdbKitMac.NetworkError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NetworkError",
-                        "printedName": "tmdbKitMac.NetworkError",
-                        "usr": "s:10tmdbKitMac12NetworkErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10tmdbKitMac12NetworkErrorO06serverE0yACSi_tcACmF",
-            "mangledName": "$s10tmdbKitMac12NetworkErrorO06serverE0yACSi_tcACmF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkError",
-                "printedName": "tmdbKitMac.NetworkError",
-                "usr": "s:10tmdbKitMac12NetworkErrorO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkError",
-                "printedName": "tmdbKitMac.NetworkError",
-                "usr": "s:10tmdbKitMac12NetworkErrorO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10tmdbKitMac12NetworkErrorO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s10tmdbKitMac12NetworkErrorO2eeoiySbAC_ACtFZ",
-            "moduleName": "tmdbKitMac",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "errorDescription",
-            "printedName": "errorDescription",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac12NetworkErrorO16errorDescriptionSSSgvp",
-            "mangledName": "$s10tmdbKitMac12NetworkErrorO16errorDescriptionSSSgvp",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac12NetworkErrorO16errorDescriptionSSSgvg",
-                "mangledName": "$s10tmdbKitMac12NetworkErrorO16errorDescriptionSSSgvg",
-                "moduleName": "tmdbKitMac",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:10tmdbKitMac12NetworkErrorO",
-        "mangledName": "$s10tmdbKitMac12NetworkErrorO",
-        "moduleName": "tmdbKitMac",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Error",
-            "printedName": "Error",
-            "usr": "s:s5ErrorP",
-            "mangledName": "$ss5ErrorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "LocalizedError",
-            "printedName": "LocalizedError",
-            "usr": "s:10Foundation14LocalizedErrorP",
-            "mangledName": "$s10Foundation14LocalizedErrorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NetworkService",
-        "printedName": "NetworkService",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NetworkService",
-                "printedName": "tmdbKitMac.NetworkService",
-                "usr": "s:10tmdbKitMac14NetworkServiceC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac14NetworkServiceC6sharedACvpZ",
-            "mangledName": "$s10tmdbKitMac14NetworkServiceC6sharedACvpZ",
-            "moduleName": "tmdbKitMac",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NetworkService",
-                    "printedName": "tmdbKitMac.NetworkService",
-                    "usr": "s:10tmdbKitMac14NetworkServiceC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac14NetworkServiceC6sharedACvgZ",
-                "mangledName": "$s10tmdbKitMac14NetworkServiceC6sharedACvgZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "request",
-            "printedName": "request(endpoint:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10tmdbKitMac14NetworkServiceC7request8endpointxSS_tYaKSeRzSERzlF",
-            "mangledName": "$s10tmdbKitMac14NetworkServiceC7request8endpointxSS_tYaKSeRzSERzlF",
-            "moduleName": "tmdbKitMac",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
-            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchTrendingMovies",
-            "printedName": "fetchTrendingMovies(page:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TrendingMoviesResponse",
-                "printedName": "tmdbKitMac.TrendingMoviesResponse",
-                "usr": "s:10tmdbKitMac22TrendingMoviesResponseV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10tmdbKitMac14NetworkServiceC19fetchTrendingMovies4pageAA0gH8ResponseVSi_tYaKF",
-            "mangledName": "$s10tmdbKitMac14NetworkServiceC19fetchTrendingMovies4pageAA0gH8ResponseVSi_tYaKF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fetchMovieDetail",
-            "printedName": "fetchMovieDetail(id:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MovieDetail",
-                "printedName": "tmdbKitMac.MovieDetail",
-                "usr": "s:10tmdbKitMac11MovieDetailV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10tmdbKitMac14NetworkServiceC16fetchMovieDetail2idAA0gH0VSi_tYaKF",
-            "mangledName": "$s10tmdbKitMac14NetworkServiceC16fetchMovieDetail2idAA0gH0VSi_tYaKF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "searchMovies",
-            "printedName": "searchMovies(query:page:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TrendingMoviesResponse",
-                "printedName": "tmdbKitMac.TrendingMoviesResponse",
-                "usr": "s:10tmdbKitMac22TrendingMoviesResponseV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10tmdbKitMac14NetworkServiceC12searchMovies5query4pageAA08TrendingG8ResponseVSS_SitYaKF",
-            "mangledName": "$s10tmdbKitMac14NetworkServiceC12searchMovies5query4pageAA08TrendingG8ResponseVSS_SitYaKF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:10tmdbKitMac14NetworkServiceC",
-        "mangledName": "$s10tmdbKitMac14NetworkServiceC",
-        "moduleName": "tmdbKitMac",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -626,1024 +22,6 @@
         "moduleName": "tmdbKitMac",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "tmdbKitMac",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Constants",
-        "printedName": "Constants",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "tmdbAPIKey",
-            "printedName": "tmdbAPIKey",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac9ConstantsV0A6APIKeySSvpZ",
-            "mangledName": "$s10tmdbKitMac9ConstantsV0A6APIKeySSvpZ",
-            "moduleName": "tmdbKitMac",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac9ConstantsV0A6APIKeySSvgZ",
-                "mangledName": "$s10tmdbKitMac9ConstantsV0A6APIKeySSvgZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tmdbBaseURL",
-            "printedName": "tmdbBaseURL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac9ConstantsV0A7BaseURLSSvpZ",
-            "mangledName": "$s10tmdbKitMac9ConstantsV0A7BaseURLSSvpZ",
-            "moduleName": "tmdbKitMac",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac9ConstantsV0A7BaseURLSSvgZ",
-                "mangledName": "$s10tmdbKitMac9ConstantsV0A7BaseURLSSvgZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tmdbImageBaseURLProd",
-            "printedName": "tmdbImageBaseURLProd",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac9ConstantsV0A16ImageBaseURLProdSSvpZ",
-            "mangledName": "$s10tmdbKitMac9ConstantsV0A16ImageBaseURLProdSSvpZ",
-            "moduleName": "tmdbKitMac",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac9ConstantsV0A16ImageBaseURLProdSSvgZ",
-                "mangledName": "$s10tmdbKitMac9ConstantsV0A16ImageBaseURLProdSSvgZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tmdbImageBaseURLDev",
-            "printedName": "tmdbImageBaseURLDev",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac9ConstantsV0A15ImageBaseURLDevSSvpZ",
-            "mangledName": "$s10tmdbKitMac9ConstantsV0A15ImageBaseURLDevSSvpZ",
-            "moduleName": "tmdbKitMac",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac9ConstantsV0A15ImageBaseURLDevSSvgZ",
-                "mangledName": "$s10tmdbKitMac9ConstantsV0A15ImageBaseURLDevSSvgZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tmdbImageBaseURL",
-            "printedName": "tmdbImageBaseURL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac9ConstantsV0A12ImageBaseURLSSvpZ",
-            "mangledName": "$s10tmdbKitMac9ConstantsV0A12ImageBaseURLSSvpZ",
-            "moduleName": "tmdbKitMac",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac9ConstantsV0A12ImageBaseURLSSvgZ",
-                "mangledName": "$s10tmdbKitMac9ConstantsV0A12ImageBaseURLSSvgZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "ImageSize",
-            "printedName": "ImageSize",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "thumbnail",
-                "printedName": "thumbnail",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(tmdbKitMac.Constants.ImageSize.Type) -> tmdbKitMac.Constants.ImageSize",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ImageSize",
-                        "printedName": "tmdbKitMac.Constants.ImageSize",
-                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "tmdbKitMac.Constants.ImageSize.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ImageSize",
-                            "printedName": "tmdbKitMac.Constants.ImageSize",
-                            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO9thumbnailyA2EmF",
-                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO9thumbnailyA2EmF",
-                "moduleName": "tmdbKitMac",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "small",
-                "printedName": "small",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(tmdbKitMac.Constants.ImageSize.Type) -> tmdbKitMac.Constants.ImageSize",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ImageSize",
-                        "printedName": "tmdbKitMac.Constants.ImageSize",
-                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "tmdbKitMac.Constants.ImageSize.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ImageSize",
-                            "printedName": "tmdbKitMac.Constants.ImageSize",
-                            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO5smallyA2EmF",
-                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO5smallyA2EmF",
-                "moduleName": "tmdbKitMac",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "medium",
-                "printedName": "medium",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(tmdbKitMac.Constants.ImageSize.Type) -> tmdbKitMac.Constants.ImageSize",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ImageSize",
-                        "printedName": "tmdbKitMac.Constants.ImageSize",
-                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "tmdbKitMac.Constants.ImageSize.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ImageSize",
-                            "printedName": "tmdbKitMac.Constants.ImageSize",
-                            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO6mediumyA2EmF",
-                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO6mediumyA2EmF",
-                "moduleName": "tmdbKitMac",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "original",
-                "printedName": "original",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(tmdbKitMac.Constants.ImageSize.Type) -> tmdbKitMac.Constants.ImageSize",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ImageSize",
-                        "printedName": "tmdbKitMac.Constants.ImageSize",
-                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "tmdbKitMac.Constants.ImageSize.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ImageSize",
-                            "printedName": "tmdbKitMac.Constants.ImageSize",
-                            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO8originalyA2EmF",
-                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO8originalyA2EmF",
-                "moduleName": "tmdbKitMac",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "tmdbKitMac.Constants.ImageSize?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ImageSize",
-                        "printedName": "tmdbKitMac.Constants.ImageSize",
-                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO8rawValueAESgSS_tcfc",
-                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO8rawValueAESgSS_tcfc",
-                "moduleName": "tmdbKitMac",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO8rawValueSSvp",
-                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO8rawValueSSvp",
-                "moduleName": "tmdbKitMac",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO8rawValueSSvg",
-                    "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO8rawValueSSvg",
-                    "moduleName": "tmdbKitMac",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO",
-            "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "enumRawTypeName": "String",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "Endpoint",
-            "printedName": "Endpoint",
-            "children": [
-              {
-                "kind": "Function",
-                "name": "trendingMovies",
-                "printedName": "trendingMovies(page:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:10tmdbKitMac9ConstantsV8EndpointO14trendingMovies4pageSSSi_tFZ",
-                "mangledName": "$s10tmdbKitMac9ConstantsV8EndpointO14trendingMovies4pageSSSi_tFZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "movieDetails",
-                "printedName": "movieDetails(id:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:10tmdbKitMac9ConstantsV8EndpointO12movieDetails2idSSSi_tFZ",
-                "mangledName": "$s10tmdbKitMac9ConstantsV8EndpointO12movieDetails2idSSSi_tFZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Function",
-                "name": "searchMovies",
-                "printedName": "searchMovies(query:page:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:10tmdbKitMac9ConstantsV8EndpointO12searchMovies5query4pageS2S_SitFZ",
-                "mangledName": "$s10tmdbKitMac9ConstantsV8EndpointO12searchMovies5query4pageS2S_SitFZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
-                ],
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:10tmdbKitMac9ConstantsV8EndpointO",
-            "mangledName": "$s10tmdbKitMac9ConstantsV8EndpointO",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10tmdbKitMac9ConstantsV",
-        "mangledName": "$s10tmdbKitMac9ConstantsV",
-        "moduleName": "tmdbKitMac",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "tmdbKitMac",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "tmdbKitMac",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "tmdbKitMac"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FavoriteMoviesManager",
-        "printedName": "FavoriteMoviesManager",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FavoriteMoviesManager",
-                "printedName": "tmdbKitMac.FavoriteMoviesManager",
-                "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC6sharedACvpZ",
-            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC6sharedACvpZ",
-            "moduleName": "tmdbKitMac",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FavoriteMoviesManager",
-                    "printedName": "tmdbKitMac.FavoriteMoviesManager",
-                    "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC6sharedACvgZ",
-                "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC6sharedACvgZ",
-                "moduleName": "tmdbKitMac",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "favoriteMovieIDs",
-            "printedName": "favoriteMovieIDs",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<Swift.Int>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sh"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvp",
-            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvp",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "Final",
-              "Custom",
-              "ProjectedValueProperty",
-              "SetterAccess",
-              "AccessControl",
-              "Custom",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Set",
-                    "printedName": "Swift.Set<Swift.Int>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sh"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvg",
-                "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvg",
-                "moduleName": "tmdbKitMac",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "$favoriteMovieIDs",
-            "printedName": "$favoriteMovieIDs",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Publisher",
-                "printedName": "Combine.Published<Swift.Set<Swift.Int>>.Publisher",
-                "usr": "s:7Combine9PublishedV9PublisherV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvp",
-            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvp",
-            "moduleName": "tmdbKitMac",
-            "implicit": true,
-            "declAttributes": [
-              "Final",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Publisher",
-                    "printedName": "Combine.Published<Swift.Set<Swift.Int>>.Publisher",
-                    "usr": "s:7Combine9PublishedV9PublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvg",
-                "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvg",
-                "moduleName": "tmdbKitMac",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "toggleFavorite",
-            "printedName": "toggleFavorite(movieID:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC06toggleD07movieIDySi_tF",
-            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC06toggleD07movieIDySi_tF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "Custom",
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isFavorite",
-            "printedName": "isFavorite(movieID:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC02isD07movieIDSbSi_tF",
-            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC02isD07movieIDSbSi_tF",
-            "moduleName": "tmdbKitMac",
-            "declAttributes": [
-              "Custom",
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC",
-        "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC",
-        "moduleName": "tmdbKitMac",
-        "declAttributes": [
-          "AccessControl",
-          "Final",
-          "Custom",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ObservableObject",
-            "printedName": "ObservableObject",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ObjectWillChangePublisher",
-                "printedName": "ObjectWillChangePublisher",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ObservableObjectPublisher",
-                    "printedName": "Combine.ObservableObjectPublisher",
-                    "usr": "s:7Combine25ObservableObjectPublisherC"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7Combine16ObservableObjectP",
-            "mangledName": "$s7Combine16ObservableObjectP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
         ]
       },
       {
@@ -5257,6 +3635,2163 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkMonitor",
+        "printedName": "NetworkMonitor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkMonitor",
+                "printedName": "tmdbKitMac.NetworkMonitor",
+                "usr": "s:10tmdbKitMac14NetworkMonitorC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac14NetworkMonitorC6sharedACvpZ",
+            "mangledName": "$s10tmdbKitMac14NetworkMonitorC6sharedACvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkMonitor",
+                    "printedName": "tmdbKitMac.NetworkMonitor",
+                    "usr": "s:10tmdbKitMac14NetworkMonitorC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac14NetworkMonitorC6sharedACvgZ",
+                "mangledName": "$s10tmdbKitMac14NetworkMonitorC6sharedACvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isConnected",
+            "printedName": "isConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac14NetworkMonitorC11isConnectedSbvp",
+            "mangledName": "$s10tmdbKitMac14NetworkMonitorC11isConnectedSbvp",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac14NetworkMonitorC11isConnectedSbvg",
+                "mangledName": "$s10tmdbKitMac14NetworkMonitorC11isConnectedSbvg",
+                "moduleName": "tmdbKitMac",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isConnected",
+            "printedName": "$isConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac14NetworkMonitorC12$isConnected7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s10tmdbKitMac14NetworkMonitorC12$isConnected7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "tmdbKitMac",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac14NetworkMonitorC12$isConnected7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s10tmdbKitMac14NetworkMonitorC12$isConnected7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "tmdbKitMac",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectionStatus",
+            "printedName": "connectionStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Status",
+                "printedName": "Network.NWPath.Status",
+                "usr": "s:7Network6NWPathV6StatusO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac14NetworkMonitorC16connectionStatus0D06NWPathV0G0Ovp",
+            "mangledName": "$s10tmdbKitMac14NetworkMonitorC16connectionStatus0D06NWPathV0G0Ovp",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "Network.NWPath.Status",
+                    "usr": "s:7Network6NWPathV6StatusO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac14NetworkMonitorC16connectionStatus0D06NWPathV0G0Ovg",
+                "mangledName": "$s10tmdbKitMac14NetworkMonitorC16connectionStatus0D06NWPathV0G0Ovg",
+                "moduleName": "tmdbKitMac",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$connectionStatus",
+            "printedName": "$connectionStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Network.NWPath.Status>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac14NetworkMonitorC17$connectionStatus7Combine9PublishedV9PublisherVy0D06NWPathV0G0O_Gvp",
+            "mangledName": "$s10tmdbKitMac14NetworkMonitorC17$connectionStatus7Combine9PublishedV9PublisherVy0D06NWPathV0G0O_Gvp",
+            "moduleName": "tmdbKitMac",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Network.NWPath.Status>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac14NetworkMonitorC17$connectionStatus7Combine9PublishedV9PublisherVy0D06NWPathV0G0O_Gvg",
+                "mangledName": "$s10tmdbKitMac14NetworkMonitorC17$connectionStatus7Combine9PublishedV9PublisherVy0D06NWPathV0G0O_Gvg",
+                "moduleName": "tmdbKitMac",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10tmdbKitMac14NetworkMonitorC",
+        "mangledName": "$s10tmdbKitMac14NetworkMonitorC",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FavoriteMoviesManager",
+        "printedName": "FavoriteMoviesManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FavoriteMoviesManager",
+                "printedName": "tmdbKitMac.FavoriteMoviesManager",
+                "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC6sharedACvpZ",
+            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC6sharedACvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FavoriteMoviesManager",
+                    "printedName": "tmdbKitMac.FavoriteMoviesManager",
+                    "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC6sharedACvgZ",
+                "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC6sharedACvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "favoriteMovieIDs",
+            "printedName": "favoriteMovieIDs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<Swift.Int>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvp",
+            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvp",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvg",
+                "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC16favoriteMovieIDsShySiGvg",
+                "moduleName": "tmdbKitMac",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$favoriteMovieIDs",
+            "printedName": "$favoriteMovieIDs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Set<Swift.Int>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvp",
+            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvp",
+            "moduleName": "tmdbKitMac",
+            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Set<Swift.Int>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvg",
+                "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC17$favoriteMovieIDs7Combine9PublishedV9PublisherVyShySiG_Gvg",
+                "moduleName": "tmdbKitMac",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toggleFavorite",
+            "printedName": "toggleFavorite(movieID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC06toggleD07movieIDySi_tF",
+            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC06toggleD07movieIDySi_tF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isFavorite",
+            "printedName": "isFavorite(movieID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC02isD07movieIDSbSi_tF",
+            "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC02isD07movieIDSbSi_tF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10tmdbKitMac21FavoriteMoviesManagerC",
+        "mangledName": "$s10tmdbKitMac21FavoriteMoviesManagerC",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "Custom",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidURL",
+            "printedName": "invalidURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitMac.NetworkError.Type) -> tmdbKitMac.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "tmdbKitMac.NetworkError",
+                    "usr": "s:10tmdbKitMac12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitMac.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10tmdbKitMac12NetworkErrorO10invalidURLyA2CmF",
+            "mangledName": "$s10tmdbKitMac12NetworkErrorO10invalidURLyA2CmF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestFailed",
+            "printedName": "requestFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitMac.NetworkError.Type) -> (any Swift.Error) -> tmdbKitMac.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> tmdbKitMac.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitMac.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10tmdbKitMac12NetworkErrorO13requestFailedyACs0E0_pcACmF",
+            "mangledName": "$s10tmdbKitMac12NetworkErrorO13requestFailedyACs0E0_pcACmF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidResponse",
+            "printedName": "invalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitMac.NetworkError.Type) -> tmdbKitMac.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "tmdbKitMac.NetworkError",
+                    "usr": "s:10tmdbKitMac12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitMac.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10tmdbKitMac12NetworkErrorO15invalidResponseyA2CmF",
+            "mangledName": "$s10tmdbKitMac12NetworkErrorO15invalidResponseyA2CmF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "decodingFailed",
+            "printedName": "decodingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitMac.NetworkError.Type) -> (any Swift.Error) -> tmdbKitMac.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> tmdbKitMac.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitMac.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10tmdbKitMac12NetworkErrorO14decodingFailedyACs0E0_pcACmF",
+            "mangledName": "$s10tmdbKitMac12NetworkErrorO14decodingFailedyACs0E0_pcACmF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitMac.NetworkError.Type) -> (Swift.Int) -> tmdbKitMac.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> tmdbKitMac.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitMac.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10tmdbKitMac12NetworkErrorO06serverE0yACSi_tcACmF",
+            "mangledName": "$s10tmdbKitMac12NetworkErrorO06serverE0yACSi_tcACmF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "offlineAndNoCache",
+            "printedName": "offlineAndNoCache",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(tmdbKitMac.NetworkError.Type) -> tmdbKitMac.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "tmdbKitMac.NetworkError",
+                    "usr": "s:10tmdbKitMac12NetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "tmdbKitMac.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "tmdbKitMac.NetworkError",
+                        "usr": "s:10tmdbKitMac12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10tmdbKitMac12NetworkErrorO17offlineAndNoCacheyA2CmF",
+            "mangledName": "$s10tmdbKitMac12NetworkErrorO17offlineAndNoCacheyA2CmF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "tmdbKitMac.NetworkError",
+                "usr": "s:10tmdbKitMac12NetworkErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "tmdbKitMac.NetworkError",
+                "usr": "s:10tmdbKitMac12NetworkErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10tmdbKitMac12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac12NetworkErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s10tmdbKitMac12NetworkErrorO16errorDescriptionSSSgvp",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac12NetworkErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s10tmdbKitMac12NetworkErrorO16errorDescriptionSSSgvg",
+                "moduleName": "tmdbKitMac",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10tmdbKitMac12NetworkErrorO",
+        "mangledName": "$s10tmdbKitMac12NetworkErrorO",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkService",
+        "printedName": "NetworkService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkService",
+                "printedName": "tmdbKitMac.NetworkService",
+                "usr": "s:10tmdbKitMac14NetworkServiceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac14NetworkServiceC6sharedACvpZ",
+            "mangledName": "$s10tmdbKitMac14NetworkServiceC6sharedACvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkService",
+                    "printedName": "tmdbKitMac.NetworkService",
+                    "usr": "s:10tmdbKitMac14NetworkServiceC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac14NetworkServiceC6sharedACvgZ",
+                "mangledName": "$s10tmdbKitMac14NetworkServiceC6sharedACvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(endpoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac14NetworkServiceC7request8endpointxSS_tYaKSeRzSERzlF",
+            "mangledName": "$s10tmdbKitMac14NetworkServiceC7request8endpointxSS_tYaKSeRzSERzlF",
+            "moduleName": "tmdbKitMac",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchTrendingMovies",
+            "printedName": "fetchTrendingMovies(page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrendingMoviesResponse",
+                "printedName": "tmdbKitMac.TrendingMoviesResponse",
+                "usr": "s:10tmdbKitMac22TrendingMoviesResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac14NetworkServiceC19fetchTrendingMovies4pageAA0gH8ResponseVSi_tYaKF",
+            "mangledName": "$s10tmdbKitMac14NetworkServiceC19fetchTrendingMovies4pageAA0gH8ResponseVSi_tYaKF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchMovieDetail",
+            "printedName": "fetchMovieDetail(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieDetail",
+                "printedName": "tmdbKitMac.MovieDetail",
+                "usr": "s:10tmdbKitMac11MovieDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac14NetworkServiceC16fetchMovieDetail2idAA0gH0VSi_tYaKF",
+            "mangledName": "$s10tmdbKitMac14NetworkServiceC16fetchMovieDetail2idAA0gH0VSi_tYaKF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "searchMovies",
+            "printedName": "searchMovies(query:page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrendingMoviesResponse",
+                "printedName": "tmdbKitMac.TrendingMoviesResponse",
+                "usr": "s:10tmdbKitMac22TrendingMoviesResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac14NetworkServiceC12searchMovies5query4pageAA08TrendingG8ResponseVSS_SitYaKF",
+            "mangledName": "$s10tmdbKitMac14NetworkServiceC12searchMovies5query4pageAA08TrendingG8ResponseVSS_SitYaKF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10tmdbKitMac14NetworkServiceC",
+        "mangledName": "$s10tmdbKitMac14NetworkServiceC",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Constants",
+        "printedName": "Constants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tmdbAPIKey",
+            "printedName": "tmdbAPIKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac9ConstantsV0A6APIKeySSvpZ",
+            "mangledName": "$s10tmdbKitMac9ConstantsV0A6APIKeySSvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac9ConstantsV0A6APIKeySSvgZ",
+                "mangledName": "$s10tmdbKitMac9ConstantsV0A6APIKeySSvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tmdbBaseURL",
+            "printedName": "tmdbBaseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac9ConstantsV0A7BaseURLSSvpZ",
+            "mangledName": "$s10tmdbKitMac9ConstantsV0A7BaseURLSSvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac9ConstantsV0A7BaseURLSSvgZ",
+                "mangledName": "$s10tmdbKitMac9ConstantsV0A7BaseURLSSvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tmdbImageBaseURLProd",
+            "printedName": "tmdbImageBaseURLProd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac9ConstantsV0A16ImageBaseURLProdSSvpZ",
+            "mangledName": "$s10tmdbKitMac9ConstantsV0A16ImageBaseURLProdSSvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac9ConstantsV0A16ImageBaseURLProdSSvgZ",
+                "mangledName": "$s10tmdbKitMac9ConstantsV0A16ImageBaseURLProdSSvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tmdbImageBaseURLDev",
+            "printedName": "tmdbImageBaseURLDev",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac9ConstantsV0A15ImageBaseURLDevSSvpZ",
+            "mangledName": "$s10tmdbKitMac9ConstantsV0A15ImageBaseURLDevSSvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac9ConstantsV0A15ImageBaseURLDevSSvgZ",
+                "mangledName": "$s10tmdbKitMac9ConstantsV0A15ImageBaseURLDevSSvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tmdbImageBaseURL",
+            "printedName": "tmdbImageBaseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac9ConstantsV0A12ImageBaseURLSSvpZ",
+            "mangledName": "$s10tmdbKitMac9ConstantsV0A12ImageBaseURLSSvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac9ConstantsV0A12ImageBaseURLSSvgZ",
+                "mangledName": "$s10tmdbKitMac9ConstantsV0A12ImageBaseURLSSvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ImageSize",
+            "printedName": "ImageSize",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "thumbnail",
+                "printedName": "thumbnail",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitMac.Constants.ImageSize.Type) -> tmdbKitMac.Constants.ImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitMac.Constants.ImageSize",
+                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitMac.Constants.ImageSize.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSize",
+                            "printedName": "tmdbKitMac.Constants.ImageSize",
+                            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO9thumbnailyA2EmF",
+                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO9thumbnailyA2EmF",
+                "moduleName": "tmdbKitMac",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "small",
+                "printedName": "small",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitMac.Constants.ImageSize.Type) -> tmdbKitMac.Constants.ImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitMac.Constants.ImageSize",
+                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitMac.Constants.ImageSize.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSize",
+                            "printedName": "tmdbKitMac.Constants.ImageSize",
+                            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO5smallyA2EmF",
+                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO5smallyA2EmF",
+                "moduleName": "tmdbKitMac",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "medium",
+                "printedName": "medium",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitMac.Constants.ImageSize.Type) -> tmdbKitMac.Constants.ImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitMac.Constants.ImageSize",
+                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitMac.Constants.ImageSize.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSize",
+                            "printedName": "tmdbKitMac.Constants.ImageSize",
+                            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO6mediumyA2EmF",
+                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO6mediumyA2EmF",
+                "moduleName": "tmdbKitMac",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "original",
+                "printedName": "original",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(tmdbKitMac.Constants.ImageSize.Type) -> tmdbKitMac.Constants.ImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitMac.Constants.ImageSize",
+                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "tmdbKitMac.Constants.ImageSize.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSize",
+                            "printedName": "tmdbKitMac.Constants.ImageSize",
+                            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO8originalyA2EmF",
+                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO8originalyA2EmF",
+                "moduleName": "tmdbKitMac",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "tmdbKitMac.Constants.ImageSize?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSize",
+                        "printedName": "tmdbKitMac.Constants.ImageSize",
+                        "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO8rawValueAESgSS_tcfc",
+                "moduleName": "tmdbKitMac",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO8rawValueSSvp",
+                "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO8rawValueSSvp",
+                "moduleName": "tmdbKitMac",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO8rawValueSSvg",
+                    "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO8rawValueSSvg",
+                    "moduleName": "tmdbKitMac",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10tmdbKitMac9ConstantsV9ImageSizeO",
+            "mangledName": "$s10tmdbKitMac9ConstantsV9ImageSizeO",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Endpoint",
+            "printedName": "Endpoint",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "trendingMovies",
+                "printedName": "trendingMovies(page:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10tmdbKitMac9ConstantsV8EndpointO14trendingMovies4pageSSSi_tFZ",
+                "mangledName": "$s10tmdbKitMac9ConstantsV8EndpointO14trendingMovies4pageSSSi_tFZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "movieDetails",
+                "printedName": "movieDetails(id:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10tmdbKitMac9ConstantsV8EndpointO12movieDetails2idSSSi_tFZ",
+                "mangledName": "$s10tmdbKitMac9ConstantsV8EndpointO12movieDetails2idSSSi_tFZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "searchMovies",
+                "printedName": "searchMovies(query:page:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10tmdbKitMac9ConstantsV8EndpointO12searchMovies5query4pageS2S_SitFZ",
+                "mangledName": "$s10tmdbKitMac9ConstantsV8EndpointO12searchMovies5query4pageS2S_SitFZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10tmdbKitMac9ConstantsV8EndpointO",
+            "mangledName": "$s10tmdbKitMac9ConstantsV8EndpointO",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10tmdbKitMac9ConstantsV",
+        "mangledName": "$s10tmdbKitMac9ConstantsV",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CacheManager",
+        "printedName": "CacheManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CacheManager",
+                "printedName": "tmdbKitMac.CacheManager",
+                "usr": "s:10tmdbKitMac12CacheManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10tmdbKitMac12CacheManagerC6sharedACvpZ",
+            "mangledName": "$s10tmdbKitMac12CacheManagerC6sharedACvpZ",
+            "moduleName": "tmdbKitMac",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CacheManager",
+                    "printedName": "tmdbKitMac.CacheManager",
+                    "usr": "s:10tmdbKitMac12CacheManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10tmdbKitMac12CacheManagerC6sharedACvgZ",
+                "mangledName": "$s10tmdbKitMac12CacheManagerC6sharedACvgZ",
+                "moduleName": "tmdbKitMac",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "storeData",
+            "printedName": "storeData(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac12CacheManagerC9storeData_3fory10Foundation0G0V_SStF",
+            "mangledName": "$s10tmdbKitMac12CacheManagerC9storeData_3fory10Foundation0G0V_SStF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "retrieveData",
+            "printedName": "retrieveData(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac12CacheManagerC12retrieveData3for10Foundation0G0VSgSS_tF",
+            "mangledName": "$s10tmdbKitMac12CacheManagerC12retrieveData3for10Foundation0G0VSgSS_tF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearCache",
+            "printedName": "clearCache()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10tmdbKitMac12CacheManagerC05clearD0yyF",
+            "mangledName": "$s10tmdbKitMac12CacheManagerC05clearD0yyF",
+            "moduleName": "tmdbKitMac",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10tmdbKitMac12CacheManagerC",
+        "mangledName": "$s10tmdbKitMac12CacheManagerC",
+        "moduleName": "tmdbKitMac",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "URLSession",
         "printedName": "URLSession",
@@ -5357,6 +5892,132 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 13,
+      "value": "\"total_pages\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 15,
+      "value": "\"total_results\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 4329,
+      "length": 13,
+      "value": "\"poster_path\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 4370,
+      "length": 14,
+      "value": "\"release_date\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 4412,
+      "length": 14,
+      "value": "\"vote_average\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 4452,
+      "length": 12,
+      "value": "\"vote_count\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 7887,
+      "length": 13,
+      "value": "\"poster_path\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 7929,
+      "length": 15,
+      "value": "\"backdrop_path\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 7972,
+      "length": 14,
+      "value": "\"release_date\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 8014,
+      "length": 14,
+      "value": "\"vote_average\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 8054,
+      "length": 12,
+      "value": "\"vote_count\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 8102,
+      "length": 22,
+      "value": "\"production_companies\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 9110,
+      "length": 11,
+      "value": "\"logo_path\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 9151,
+      "length": 16,
+      "value": "\"origin_country\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/service\/NetworkMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 707,
+      "length": 21,
+      "value": "\"NetworkMonitorQueue\""
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/service\/NetworkMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 991,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/FavoriteMoviesManager.swift",
+      "kind": "Array",
+      "offset": 886,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/FavoriteMoviesManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1005,
+      "length": 18,
+      "value": "\"favoriteMovieIDs\""
+    },
     {
       "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/utils\/Constants.swift",
       "kind": "StringLiteral",
@@ -5477,116 +6138,11 @@
       "value": "\"original\""
     },
     {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/FavoriteMoviesManager.swift",
-      "kind": "Array",
-      "offset": 886,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/FavoriteMoviesManager.swift",
+      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/service\/CacheManager.swift",
       "kind": "StringLiteral",
-      "offset": 1005,
-      "length": 18,
-      "value": "\"favoriteMovieIDs\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 1046,
-      "length": 13,
-      "value": "\"total_pages\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 1088,
-      "length": 15,
-      "value": "\"total_results\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 4329,
-      "length": 13,
-      "value": "\"poster_path\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 4370,
-      "length": 14,
-      "value": "\"release_date\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 4412,
-      "length": 14,
-      "value": "\"vote_average\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 4452,
-      "length": 12,
-      "value": "\"vote_count\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 7887,
-      "length": 13,
-      "value": "\"poster_path\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 7929,
-      "length": 15,
-      "value": "\"backdrop_path\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 7972,
-      "length": 14,
-      "value": "\"release_date\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 8014,
-      "length": 14,
-      "value": "\"vote_average\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 8054,
-      "length": 12,
-      "value": "\"vote_count\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 8102,
-      "length": 22,
-      "value": "\"production_companies\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 9110,
-      "length": 11,
-      "value": "\"logo_path\""
-    },
-    {
-      "filePath": "\/Users\/ggajduk\/workspace\/tmdb\/Frameworks\/tmdbKit\/tmdbKit\/models\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 9151,
-      "length": 16,
-      "value": "\"origin_country\""
+      "offset": 549,
+      "length": 21,
+      "value": "\"NetworkServiceCache\""
     }
   ]
 }

@@ -40,6 +40,8 @@
 			membershipExceptions = (
 				FavoriteMoviesManager.swift,
 				models/Models.swift,
+				service/CacheManager.swift,
+				service/NetworkMonitor.swift,
 				service/NetworkService.swift,
 				utils/Constants.swift,
 				utils/URLSessionProtocol.swift,
@@ -51,6 +53,8 @@
 			membershipExceptions = (
 				FavoriteMoviesManager.swift,
 				models/Models.swift,
+				service/CacheManager.swift,
+				service/NetworkMonitor.swift,
 				service/NetworkService.swift,
 				utils/Constants.swift,
 				utils/URLSessionProtocol.swift,

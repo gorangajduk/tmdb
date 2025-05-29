@@ -4,10 +4,55 @@
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1
 import Combine
 import Foundation
+import Network
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class CacheManager {
+  public static let shared: tmdbKit.CacheManager
+  public func storeData(_ data: Foundation.Data, for endpoint: Swift.String)
+  public func retrieveData(for endpoint: Swift.String) -> Foundation.Data?
+  public func clearCache()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NetworkMonitor : Foundation.ObservableObject {
+  public static let shared: tmdbKit.NetworkMonitor
+  @Combine.Published @_projectedValueProperty($isConnected) public var isConnected: Swift.Bool {
+    get
+  }
+  public var $isConnected: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($connectionStatus) public var connectionStatus: Network.NWPath.Status {
+    get
+  }
+  public var $connectionStatus: Combine.Published<Network.NWPath.Status>.Publisher {
+    get
+  }
+  @objc deinit
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+}
+public enum NetworkError : Swift.Error, Foundation.LocalizedError, Swift.Equatable {
+  case invalidURL
+  case requestFailed(any Swift.Error)
+  case invalidResponse
+  case decodingFailed(any Swift.Error)
+  case serverError(statusCode: Swift.Int)
+  case offlineAndNoCache
+  public static func == (lhs: tmdbKit.NetworkError, rhs: tmdbKit.NetworkError) -> Swift.Bool
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NetworkService {
+  public static let shared: tmdbKit.NetworkService
+  public func request<T>(endpoint: Swift.String) async throws -> T where T : Swift.Decodable, T : Swift.Encodable
+  public func fetchTrendingMovies(page: Swift.Int) async throws -> tmdbKit.TrendingMoviesResponse
+  public func fetchMovieDetail(id: Swift.Int) async throws -> tmdbKit.MovieDetail
+  public func searchMovies(query: Swift.String, page: Swift.Int) async throws -> tmdbKit.TrendingMoviesResponse
+  @objc deinit
+}
 public struct Constants {
   public static let tmdbAPIKey: Swift.String
   public static let tmdbBaseURL: Swift.String
@@ -146,25 +191,6 @@ public struct ProductionCompany : Swift.Codable, Swift.Identifiable {
   public typealias ID = Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
-}
-public enum NetworkError : Swift.Error, Foundation.LocalizedError, Swift.Equatable {
-  case invalidURL
-  case requestFailed(any Swift.Error)
-  case invalidResponse
-  case decodingFailed(any Swift.Error)
-  case serverError(statusCode: Swift.Int)
-  public static func == (lhs: tmdbKit.NetworkError, rhs: tmdbKit.NetworkError) -> Swift.Bool
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers public class NetworkService {
-  public static let shared: tmdbKit.NetworkService
-  public func request<T>(endpoint: Swift.String) async throws -> T where T : Swift.Decodable, T : Swift.Encodable
-  public func fetchTrendingMovies(page: Swift.Int) async throws -> tmdbKit.TrendingMoviesResponse
-  public func fetchMovieDetail(id: Swift.Int) async throws -> tmdbKit.MovieDetail
-  public func searchMovies(query: Swift.String, page: Swift.Int) async throws -> tmdbKit.TrendingMoviesResponse
-  @objc deinit
 }
 extension tmdbKit.Constants.ImageSize : Swift.Equatable {}
 extension tmdbKit.Constants.ImageSize : Swift.Hashable {}

@@ -4,23 +4,11 @@
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1
 import Combine
 import Foundation
+import Network
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class FavoriteMoviesManager : Foundation.ObservableObject {
-  @_Concurrency.MainActor public static let shared: tmdbKit.FavoriteMoviesManager
-  @Combine.Published @_projectedValueProperty($favoriteMovieIDs) @_Concurrency.MainActor final public var favoriteMovieIDs: Swift.Set<Swift.Int> {
-    get
-  }
-  @_Concurrency.MainActor final public var $favoriteMovieIDs: Combine.Published<Swift.Set<Swift.Int>>.Publisher {
-    get
-  }
-  @_Concurrency.MainActor final public func toggleFavorite(movieID: Swift.Int)
-  @_Concurrency.MainActor final public func isFavorite(movieID: Swift.Int) -> Swift.Bool
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
 public struct TrendingMoviesResponse : Swift.Codable {
   public let page: Swift.Int
   public let results: [tmdbKit.Movie]
@@ -124,12 +112,37 @@ public struct ProductionCompany : Swift.Codable, Swift.Identifiable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+@_hasMissingDesignatedInitializers public class CacheManager {
+  public static let shared: tmdbKit.CacheManager
+  public func storeData(_ data: Foundation.Data, for endpoint: Swift.String)
+  public func retrieveData(for endpoint: Swift.String) -> Foundation.Data?
+  public func clearCache()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class NetworkMonitor : Foundation.ObservableObject {
+  public static let shared: tmdbKit.NetworkMonitor
+  @Combine.Published @_projectedValueProperty($isConnected) public var isConnected: Swift.Bool {
+    get
+  }
+  public var $isConnected: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($connectionStatus) public var connectionStatus: Network.NWPath.Status {
+    get
+  }
+  public var $connectionStatus: Combine.Published<Network.NWPath.Status>.Publisher {
+    get
+  }
+  @objc deinit
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+}
 public enum NetworkError : Swift.Error, Foundation.LocalizedError, Swift.Equatable {
   case invalidURL
   case requestFailed(any Swift.Error)
   case invalidResponse
   case decodingFailed(any Swift.Error)
   case serverError(statusCode: Swift.Int)
+  case offlineAndNoCache
   public static func == (lhs: tmdbKit.NetworkError, rhs: tmdbKit.NetworkError) -> Swift.Bool
   public var errorDescription: Swift.String? {
     get
@@ -166,10 +179,23 @@ public struct Constants {
     public static func searchMovies(query: Swift.String, page: Swift.Int) -> Swift.String
   }
 }
-extension tmdbKit.FavoriteMoviesManager : Swift.Sendable {}
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class FavoriteMoviesManager : Foundation.ObservableObject {
+  @_Concurrency.MainActor public static let shared: tmdbKit.FavoriteMoviesManager
+  @Combine.Published @_projectedValueProperty($favoriteMovieIDs) @_Concurrency.MainActor final public var favoriteMovieIDs: Swift.Set<Swift.Int> {
+    get
+  }
+  @_Concurrency.MainActor final public var $favoriteMovieIDs: Combine.Published<Swift.Set<Swift.Int>>.Publisher {
+    get
+  }
+  @_Concurrency.MainActor final public func toggleFavorite(movieID: Swift.Int)
+  @_Concurrency.MainActor final public func isFavorite(movieID: Swift.Int) -> Swift.Bool
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
 extension tmdbKit.TrendingMoviesResponse.CodingKeys : Swift.Equatable {}
 extension tmdbKit.TrendingMoviesResponse.CodingKeys : Swift.Hashable {}
 extension tmdbKit.TrendingMoviesResponse.CodingKeys : Swift.RawRepresentable {}
 extension tmdbKit.Constants.ImageSize : Swift.Equatable {}
 extension tmdbKit.Constants.ImageSize : Swift.Hashable {}
 extension tmdbKit.Constants.ImageSize : Swift.RawRepresentable {}
+extension tmdbKit.FavoriteMoviesManager : Swift.Sendable {}

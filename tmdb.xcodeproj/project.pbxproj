@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D88C64AD2DE79ECB00AF04BA /* tmdbKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88C64AB2DE79EC300AF04BA /* tmdbKit.xcframework */; };
-		D88C64AE2DE79ECB00AF04BA /* tmdbKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D88C64AB2DE79EC300AF04BA /* tmdbKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D88C65422DE8261C00AF04BA /* tmdbKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88C65412DE8261C00AF04BA /* tmdbKit.xcframework */; };
 		D8E45EBE2DE6501D005015C9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D8E45EBD2DE6501D005015C9 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D88C64AE2DE79ECB00AF04BA /* tmdbKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D88C64AB2DE79EC300AF04BA /* tmdbKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = tmdbKit.xcframework; sourceTree = "<group>"; };
+		D88C65412DE8261C00AF04BA /* tmdbKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = tmdbKit.xcframework; sourceTree = "<group>"; };
 		D8E45E392DE6157A005015C9 /* tmdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tmdb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45E4F2DE6157C005015C9 /* tmdbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E45E592DE6157C005015C9 /* tmdbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmdbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E45EBE2DE6501D005015C9 /* Kingfisher in Frameworks */,
-				D88C64AD2DE79ECB00AF04BA /* tmdbKit.xcframework in Frameworks */,
+				D88C65422DE8261C00AF04BA /* tmdbKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +113,7 @@
 				D8E45E522DE6157C005015C9 /* tmdbTests */,
 				D8E45E5C2DE6157C005015C9 /* tmdbUITests */,
 				D8E45E3A2DE6157A005015C9 /* Products */,
-				D88C64AB2DE79EC300AF04BA /* tmdbKit.xcframework */,
+				D88C65412DE8261C00AF04BA /* tmdbKit.xcframework */,
 			);
 			sourceTree = "<group>";
 		};

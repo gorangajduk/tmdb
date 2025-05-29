@@ -10,43 +10,43 @@
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		aeR5JrkItRYAcIUrOq01iGwZ41E=
+		EZXYubDMXmHBloZLYmA4qcJiCvE=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bnchqPX79fzPFcu7jOjAD1E/4hs=
+		pCciv1TUdMLsiwQ7EZs3HaCwXbM=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wIBoWFd5x4eb/1dAwDnH1AEgfoE=
+		gWI/817V2gb8kCzgzgXD+GA39Tc=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bnchqPX79fzPFcu7jOjAD1E/4hs=
+		pCciv1TUdMLsiwQ7EZs3HaCwXbM=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QUZ2lxxLuHxcu3gTw34HKGIuQt8=
+		V5rAE8sSwqGTUUGclOiwfyvW9DA=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		aeR5JrkItRYAcIUrOq01iGwZ41E=
+		EZXYubDMXmHBloZLYmA4qcJiCvE=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RxvYEHU3zaxhAFpBpozYXxY9uWk=
+		BzCLhrM2WfT6AI8v71SsAV8ugV4=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aiBcSoH0OlD1Ro6omBE1hFbO8Lg=
+		1+7X8soAHK69F8F9N5QeRFnY55Y=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RxvYEHU3zaxhAFpBpozYXxY9uWk=
+		BzCLhrM2WfT6AI8v71SsAV8ugV4=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HNUABhjhpH+buC3m83gNFpOOeRE=
+		JFVfqlwWgT+jMxAu86RxuN8S/Is=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			me4gRMMiki9Qd+oGNk697WjMUIyISrW8HUIDH/qVjjQ=
+			tutXUbUdCscoZ3HCPBH9MgQ+Pb/ZpD8jEexhpV3IXq4=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HUv8bVrvdLBelu85Vo6gB07HokXQzJX2fU8YKPIbSW0=
+			zZ7sLx6tIz7OC/cuuC9oxBHgON2AzBGWpRL29Nv1CA0=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vYPU1FTKhEPXWED2745379Im1O6O65f220kuDFnTOfE=
+			BnPy2/z6McYXPyFIXF05d5mus/y+w/fC/OZt4QH6grs=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HUv8bVrvdLBelu85Vo6gB07HokXQzJX2fU8YKPIbSW0=
+			zZ7sLx6tIz7OC/cuuC9oxBHgON2AzBGWpRL29Nv1CA0=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+wM83U+/8n+2HPLFjy4w1MNDt/pzWGIhTGy8nUxOeoc=
+			+qRfjPn37750kW8dQBBMJuU1shb86RUfnAK703i0+fY=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			me4gRMMiki9Qd+oGNk697WjMUIyISrW8HUIDH/qVjjQ=
+			tutXUbUdCscoZ3HCPBH9MgQ+Pb/ZpD8jEexhpV3IXq4=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ciw8+mqIu3l75s9+Vj6FogyB1cnElN4HMri77misBgM=
+			1JM5EwNG6biwb9L5X3QLMXaVuzNZ4c4UNE84GCUht7Q=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n4Ac8solqP5YRNxH8cej2JWw4sFldxfjqYZbif843Eo=
+			g6U6nrllpp9fBj8XNz34iPu8zRuIsF4pFyJMoKbWl5w=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ciw8+mqIu3l75s9+Vj6FogyB1cnElN4HMri77misBgM=
+			1JM5EwNG6biwb9L5X3QLMXaVuzNZ4c4UNE84GCUht7Q=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xpwIp5Q65pM52vXyPzPm/MU82cshCpHxEcHnQm2LuJM=
+			gb7klwBeCTjT8zjir0O0sxrLy7rXSJ7BdVGqxvqS1kg=
 			</data>
 		</dict>
 	</dict>
