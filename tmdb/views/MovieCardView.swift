@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import tmdbKit
 
 struct MovieCardView: View {
     let movie: Movie

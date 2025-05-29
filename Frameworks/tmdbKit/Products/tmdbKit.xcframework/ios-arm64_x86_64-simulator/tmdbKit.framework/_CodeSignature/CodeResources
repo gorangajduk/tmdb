@@ -10,43 +10,43 @@
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		EZXYubDMXmHBloZLYmA4qcJiCvE=
+		plmZ0TS6jxelWq0eYKXIxdDNadw=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pCciv1TUdMLsiwQ7EZs3HaCwXbM=
+		vuNopD/XMs7ZxuFbVK/CbqQnQ6c=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gWI/817V2gb8kCzgzgXD+GA39Tc=
+		G11q4Lm7F8Ec2V3qdmxEgfPpd0k=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pCciv1TUdMLsiwQ7EZs3HaCwXbM=
+		vuNopD/XMs7ZxuFbVK/CbqQnQ6c=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V5rAE8sSwqGTUUGclOiwfyvW9DA=
+		cRDDuywG3rvvIW4x2Hm7h2lLEWo=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		EZXYubDMXmHBloZLYmA4qcJiCvE=
+		plmZ0TS6jxelWq0eYKXIxdDNadw=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		BzCLhrM2WfT6AI8v71SsAV8ugV4=
+		5d9CgvpLgGCyuf302v5CO8jcd20=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1+7X8soAHK69F8F9N5QeRFnY55Y=
+		FRByxPhJHYIiKqrRGoCj7uR0HZ4=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BzCLhrM2WfT6AI8v71SsAV8ugV4=
+		5d9CgvpLgGCyuf302v5CO8jcd20=
 		</data>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JFVfqlwWgT+jMxAu86RxuN8S/Is=
+		gWV6VfmsL4B4P6tAJKcgejIaz50=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tutXUbUdCscoZ3HCPBH9MgQ+Pb/ZpD8jEexhpV3IXq4=
+			d2BFCNLqk9fGU6CFByq8XAsBbl1Z5Z6RurxmZBmGLn8=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zZ7sLx6tIz7OC/cuuC9oxBHgON2AzBGWpRL29Nv1CA0=
+			GTkCW95Gpw/LXCfP4sswq+EjookpFMKWwSInhPOLdVQ=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BnPy2/z6McYXPyFIXF05d5mus/y+w/fC/OZt4QH6grs=
+			r7Tmr0gg/WvHDPG/OK+6VhHQ6WjmnfTIy/mGhoVYBvU=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zZ7sLx6tIz7OC/cuuC9oxBHgON2AzBGWpRL29Nv1CA0=
+			GTkCW95Gpw/LXCfP4sswq+EjookpFMKWwSInhPOLdVQ=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+qRfjPn37750kW8dQBBMJuU1shb86RUfnAK703i0+fY=
+			gfy0MShqQllOI8KB9KkCGbFI6w51yunG3sgF5m4v328=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tutXUbUdCscoZ3HCPBH9MgQ+Pb/ZpD8jEexhpV3IXq4=
+			d2BFCNLqk9fGU6CFByq8XAsBbl1Z5Z6RurxmZBmGLn8=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1JM5EwNG6biwb9L5X3QLMXaVuzNZ4c4UNE84GCUht7Q=
+			SiNfWTfUrUJKhB6PFqQ3vLrtxckm5nVwllZkCely8o0=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g6U6nrllpp9fBj8XNz34iPu8zRuIsF4pFyJMoKbWl5w=
+			6MaWZHmRlOPcie7uYK5zW7+iVupIR5bvdwmPSNp9uSY=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1JM5EwNG6biwb9L5X3QLMXaVuzNZ4c4UNE84GCUht7Q=
+			SiNfWTfUrUJKhB6PFqQ3vLrtxckm5nVwllZkCely8o0=
 			</data>
 		</dict>
 		<key>Modules/tmdbKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gb7klwBeCTjT8zjir0O0sxrLy7rXSJ7BdVGqxvqS1kg=
+			5dPzdjUdBZwb6+OZnrcjPLp/yGFWF3gOQR2LTZ+2fJQ=
 			</data>
 		</dict>
 	</dict>

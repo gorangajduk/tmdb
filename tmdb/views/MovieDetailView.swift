@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import tmdbKit
 
 /// A SwiftUI view responsible for displaying the detailed information of a single movie.
 /// It observes a `MovieDetailViewModel` to fetch and present movie data.

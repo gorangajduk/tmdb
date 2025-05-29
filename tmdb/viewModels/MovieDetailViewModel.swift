@@ -7,7 +7,6 @@
 
 import Foundation
 import Combine
-import tmdbKit
 
 /// A view model responsible for fetching and managing detailed information for a single movie.
 /// It observes loading and error states and exposes them to the UI.

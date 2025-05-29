@@ -46,6 +46,10 @@ class TrendingMoviesViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        // Set an accessibility identifier for the collection view itself
+        collectionView.accessibilityIdentifier = "trendingMoviesCollectionView"
+        
         // Register the custom UICollectionViewCell which acts as a container for SwiftUI views.
         collectionView.register(MovieCollectionViewCell.self,
                                 forCellWithReuseIdentifier: MovieCollectionViewCell.reuseIdentifier)
@@ -69,6 +73,9 @@ class TrendingMoviesViewController: UIViewController {
                                            style: .plain,
                                            target: self,
                                            action: #selector(searchButtonTapped))
+        
+        // Set an accessibility identifier for the search button
+        searchButton.accessibilityIdentifier = "searchButton"
         
         // Assign the button to the right side of the navigation bar.
         navigationItem.rightBarButtonItem = searchButton
@@ -104,9 +111,18 @@ class TrendingMoviesViewController: UIViewController {
         let alertController = UIAlertController(title: "Error",
                                                 message: message,
                                                 preferredStyle: .alert)
+        
+        // Set an accessibility identifier for the alert controller's title and message
+        alertController.view.accessibilityIdentifier = "errorAlert"
+        alertController.view.accessibilityLabel = "Error Alert"
+        
         let okAction = UIAlertAction(title: "OK",
                                      style: .default,
                                      handler: nil)
+        
+        // Set an accessibility identifier for the OK button on the alert
+        okAction.accessibilityIdentifier = "okButton"
+        
         alertController.addAction(okAction)
         present(alertController,
                 animated: true,
@@ -122,6 +138,11 @@ class TrendingMoviesViewController: UIViewController {
         
         // Wrap the SwiftUI view in a UIHostingController to present it from UIKit.
         let searchViewController = UIHostingController(rootView: searchSwiftUIView)
+        
+        // Set a title for the navigation bar on the detail screen.
+        searchViewController.title = "Search Movies" // Optional title for search view controller's nav bar
+        searchViewController.view.accessibilityIdentifier = "searchMoviesView" // Identifier for the search view itself
+
         
         // Present the search view controller modally, animating its appearance.
         present(searchViewController, animated: true, completion: nil)
@@ -200,6 +221,10 @@ extension TrendingMoviesViewController: UICollectionViewDataSource {
         }
         let movie = viewModel.movies[indexPath.item]
         cell.configure(with: movie) // Configure the cell with movie data
+        
+        // Set an accessibility identifier for the cell itself, including its row/item for uniqueness
+        cell.accessibilityIdentifier = "movieCell_\(indexPath.item)"
+        
         return cell
     }
 }
@@ -221,6 +246,7 @@ extension TrendingMoviesViewController: UICollectionViewDelegate {
         
         // 3. Set a title for the navigation bar on the detail screen.
         detailViewController.title = selectedMovie.title
+        detailViewController.view.accessibilityIdentifier = "movieDetailView" // Identifier for the detail view itself
         
         // 4. Push the UIHostingController onto the navigation stack.
         // Ensure that TrendingMoviesViewController is embedded in a UINavigationController

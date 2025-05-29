@@ -7,7 +7,6 @@
 
 import Foundation
 import Combine 
-import tmdbKit
 
 /// A view model responsible for handling movie search queries and managing search results.
 /// It includes debouncing to optimize API calls and pagination for search results.

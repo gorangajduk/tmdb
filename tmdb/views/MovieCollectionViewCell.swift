@@ -7,7 +7,6 @@
 
 import UIKit
 import SwiftUI // Essential for embedding SwiftUI views within UIKit
-import tmdbKit
 
 /// A custom `UICollectionViewCell` designed to host a SwiftUI `View` (`MovieCardView`).
 /// This bridge allows `UICollectionView` to display rich, declarative SwiftUI content.

@@ -10,43 +10,43 @@
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		EFAlSdtYH//6XxHdG387iLYWBEQ=
+		nMPAGzWS9B66e1SBPAPzKuP9bro=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		UlfVzq26EBH6KiGf0FVCaJk/nv4=
+		uHYtPvPDdVM/ORcFaaFIBgdifbA=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		tdoCcXFbvBcU5zQii1/Q0dmEs2E=
+		rVJuoRoYn/m9xj2zgnB5TrOfcrw=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		UlfVzq26EBH6KiGf0FVCaJk/nv4=
+		uHYtPvPDdVM/ORcFaaFIBgdifbA=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		JZLExNF2x2NybUyNXoYVuAqjGWU=
+		tBr+cS0f3Nqz8ZCSrYbUJ0XgO7Q=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		EFAlSdtYH//6XxHdG387iLYWBEQ=
+		nMPAGzWS9B66e1SBPAPzKuP9bro=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		stKwHdWnZ52xxHvnqSEquJVTv8g=
+		xc2xIiL7tpNhdKDrKLrB0S1wtCg=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		bzdnrP0ED+4tiEB8Nz4p48pi4Fw=
+		o6slcOpIKcB22fhhtJJWh0/sabk=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		stKwHdWnZ52xxHvnqSEquJVTv8g=
+		xc2xIiL7tpNhdKDrKLrB0S1wtCg=
 		</data>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		RJNhvkj8AMIW0/rx+gkgjPt8RQY=
+		XMeYoKP8P6720GvIz8Y15umIpA4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v9Dn8A1RHH1GdxkK7obmBePOkJbV+DJ/KZZsvJyBhjM=
+			/NyysrdI3/37Z1VF5f4QSVcv8/aj5RP8wzf6K+FhtUQ=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HkbcivlupwDksdNznsUImP1HprNWLMjXijFC7+3MYEA=
+			OiwdNcsODgJFAIbGHY0os1kSGNfmjkJhHWf+YvDjkCs=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			idqS9oZEBRDf7JGWPceR6meSjJAjPQz/F0uxMmiLIR0=
+			SQ+UUwgLCvv07UNRjpaHVlnbWLLSGjUQlVUWrndUKS0=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HkbcivlupwDksdNznsUImP1HprNWLMjXijFC7+3MYEA=
+			OiwdNcsODgJFAIbGHY0os1kSGNfmjkJhHWf+YvDjkCs=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l6Pt604YygrCcmGk7K1Skz/b79OzON9wIsdRDmcrmUY=
+			Lvnxg00MDKdCv0YLokNqi8zZWLUuGmjpOT7wUeGYtbU=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v9Dn8A1RHH1GdxkK7obmBePOkJbV+DJ/KZZsvJyBhjM=
+			/NyysrdI3/37Z1VF5f4QSVcv8/aj5RP8wzf6K+FhtUQ=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XnLQ3D/dlrlfDP72oajjFKdXLq3rYuy2dLcFQVYBeKY=
+			jlzSA6y4kkcjbtXbch5aSUg6ZUYHHGyNgavEnmSp4kU=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zc/bejGVz0KPOJZsKKqmztKpDB0YtViUDInlqDP/Wuc=
+			bxlWat8x77OSOoWsTzfIAfncp58d+yvef3VRY7hUoQw=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XnLQ3D/dlrlfDP72oajjFKdXLq3rYuy2dLcFQVYBeKY=
+			jlzSA6y4kkcjbtXbch5aSUg6ZUYHHGyNgavEnmSp4kU=
 			</data>
 		</dict>
 		<key>Modules/tmdbKitTV.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4v0heitUEgL8epA7K8yFtY5q0Sz8yVhiXB74ZHkiz/4=
+			YG2KhZDQRKsLjoBqYcllMqFjup7C4czl8PJa+SzMzr0=
 			</data>
 		</dict>
 	</dict>

@@ -6,38 +6,20 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>tmdbKit.framework/tmdbKit</string>
+			<string>tmdbKitMac.framework/Versions/A/tmdbKitMac</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
+			<string>macos-arm64_x86_64</string>
 			<key>LibraryPath</key>
-			<string>tmdbKit.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>tmdbKitTV.framework/tmdbKitTV</string>
-			<key>DebugSymbolsPath</key>
-			<string>dSYMs</string>
-			<key>LibraryIdentifier</key>
-			<string>tvos-arm64_x86_64-simulator</string>
-			<key>LibraryPath</key>
-			<string>tmdbKitTV.framework</string>
+			<string>tmdbKitMac.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>tvos</string>
-			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
+			<string>macos</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
@@ -76,20 +58,38 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>tmdbKitMac.framework/Versions/A/tmdbKitMac</string>
+			<string>tmdbKit.framework/tmdbKit</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
-			<string>macos-arm64_x86_64</string>
+			<string>ios-arm64</string>
 			<key>LibraryPath</key>
-			<string>tmdbKitMac.framework</string>
+			<string>tmdbKit.framework</string>
+			<key>SupportedArchitectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>SupportedPlatform</key>
+			<string>ios</string>
+		</dict>
+		<dict>
+			<key>BinaryPath</key>
+			<string>tmdbKitTV.framework/tmdbKitTV</string>
+			<key>DebugSymbolsPath</key>
+			<string>dSYMs</string>
+			<key>LibraryIdentifier</key>
+			<string>tvos-arm64_x86_64-simulator</string>
+			<key>LibraryPath</key>
+			<string>tmdbKitTV.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>macos</string>
+			<string>tvos</string>
+			<key>SupportedPlatformVariant</key>
+			<string>simulator</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>
